@@ -86,7 +86,7 @@ cursor: pointer;
 
    }
 
-   @media screen and (max-width:700px){
+   @media (max-width:700px){
 
 .header>a>h1{
 font-size: 38px;
