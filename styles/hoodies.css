@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap'); 
+   *{
+       padding: 0;
+       margin: 0;
+       font-family: 'Lora', serif;
+
+   }
+   .navbar{
+       height: 160px;
+       width: 100%;
+       background-color: #ffb301;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+   }
+   
+   .logo{
+       width: 15%;
+       margin-left: 20px;
+       
+   }
+   .categories{
+       width: 60%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+   }
+   .categories>a>div>img{
+       height: 100px;
+       width: 100px;
+       border-radius: 50%;
+   }
+   .categories>a>div{
+       padding: 5px;
+       cursor: pointer;
+
+   }
+   .categories>a>div>h2{
+       font-size: 18px;
+       font-weight: 700;
+       margin-left: 18px;
+   }
+   .categories>a{
+   text-decoration: none;
+   color: black;
+   }
+   .logo>a>img{
+       height: 100px;
+       width: 100px;
+       border-radius: 50%;
+   }
+   .header{
+       width: 100%;
+       background-color: #ffb301;
+   }
+   .header>a>h1{
+       text-align: center;
+       font-size: 48px;
+   }
+   .header>a{
+       text-decoration: none;
+       color: black;
+   }
+   .cred{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 20%;
+       margin: auto;
+       margin-top: 15px;
+   }
+   .cred>button{
+margin-right: 10px;
+height: 40px;
+width: 100px;
+background-color: #ffb301;
+border: 2px solid black;
+border-radius: 10px;
+cursor: pointer;
+   }
+   .cred>h2{
+       margin-right: 10px;
+cursor: pointer;
+
+   }
+
+   @media screen and (max-width:700px){
+
+.header>a>h1{
+font-size: 38px;
+}
+.categories>a>div>img{
+height: 50px;
+width: 50px;
+}
+}
+  
