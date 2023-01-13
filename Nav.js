@@ -1,6 +1,23 @@
 
 function Navbar(){
-    return `<div class="header">
+    return `
+    <div class="top">
+    <div class="search-container">
+    <form>
+      <input type="text" placeholder="Search..." id="search-input">
+      <button type="submit" id="search-btn">Search</button>
+    </form>
+  </div>
+    <div class=cred>
+<button>Login</button>
+<button>Signup</button>
+ <a href="./cart.html"> <h2>Cart</h2> </a>
+
+
+     </div>
+    
+</div>
+    <div class="header">
        
     <a href="/index.html"> <h1>Shopunder669</h1> </a>
  </div>
@@ -25,8 +42,8 @@ function Navbar(){
 </a>
 <a href="./pants.html">
          <div>
-             <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
-<h2>Pants</h2>
+             <img src="https://plus.unsplash.com/premium_photo-1663076093668-89e15a80156e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c3dlYXRzaGlydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+<h2>Sweatshirts</h2>
          </div>
      </a>
   <a href="./books.html">    <div>
@@ -35,28 +52,15 @@ function Navbar(){
          </div>
      </a>   
     <a href="./watches.html">   <div>
-             <img src="https://images.unsplash.com/photo-1585123334904-845d60e97b29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2F0Y2hlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"/>
-<h2>Watches</h2>
+             <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VzdG9taXplJTIwdCUyMHNoaXJ0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"/>
+<h2>Custom</h2>
          </div>
      </a>  
         
      </div>
      
  </div>
- <div class=cred>
-<button>Login</button>
-<button>Signup</button>
- <a href="./cart.html"> <h2>Cart</h2> </a>
-
-
-     </div>
-     <div class="search-container">
-        <form>
-          <input type="text" placeholder="Search..." id="search-input">
-          <button type="submit" id="search-btn"><i class="fa fa-search">Search</i></button>
-        </form>
-      </div>
-
+ 
  `
 }
 

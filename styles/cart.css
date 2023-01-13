@@ -20,8 +20,6 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border: 2px solid #ffb301;
-  border-radius: 10px;
   height: 450px;
 }
 
@@ -32,7 +30,7 @@
 #cartproduct > div > button,#qtdiv>button {
   height: 40px;
   width: 80px;
-  background-color: #ffb301;
+  background-color: #ffff00;
   color: #ffffff;
   border: none;
   border-radius: 10px;
