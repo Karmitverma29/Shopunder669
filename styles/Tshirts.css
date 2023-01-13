@@ -133,22 +133,101 @@ cursor: pointer;
 
    }
    @media screen and (max-width:700px){
+    body{
+        width: auto;
+    }
 .banner{
    grid-template-columns: repeat(1,1fr);
-   height: 800px;
+   /* height: 600px; */
 }
+.banner>.text{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb301;
+    
+    
+    }
+    .banner>.text>h1{
+    text-align: center;
+    }
 #banner2{
    grid-template-columns: repeat(1,1fr);
 }
+#banner2>.texts{
+    font-size: 18px;
+    
+    }
+    #banner2>.texts>h1{
+    text-align: center;
+    }
+    
 .header>a>h1{
-   font-size: 38px;
+   font-size: 28px;
 }
 .categories>a>div>img{
-   height: 50px;
-   width: 50px;
+   height: 60px;
+   width: 60px;
+}
+
+/* .categories>a>div{
+    padding: 5px;
+    cursor: pointer;
+
+} */
+.categories>a>div>h2{
+    font-size: 12px;
+    /* font-weight: 700; */
+    margin-right: 10px;
 }
 #shirts{
    grid-template-columns: repeat(1,1fr);
+}
+
+#shirts>div{
+    padding: 20px;
+    border: 2px solid #ffb301;
+    border-radius: 10px;
+    height: 400px;
+}
+#shirts>div>img{
+    height: 50%;
+    width: 90%;
+    margin-left: 15px;
+}
+#shirts>div>button{
+
+    height: 40px;
+    width: 80px;
+    margin-right:70px;
+    background-color: #ffb301;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+
+}
+#shirts>div>h2{
+text-align: center;
+font-size: 18px;
+margin-top: 5px;
+}
+#shirts>div>h3{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+
+
+}
+#shirts>div>p{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+
+
 }
 }
 

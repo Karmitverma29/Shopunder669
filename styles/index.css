@@ -151,17 +151,48 @@ width: 80%;
     }
 .banner{
    grid-template-columns: repeat(1,1fr);
-   height: 800px;
+   /* height: 600px; */
 }
+.banner>.text{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb301;
+    
+    
+    }
+    .banner>.text>h1{
+    text-align: center;
+    }
 #banner2{
    grid-template-columns: repeat(1,1fr);
 }
+#banner2>.texts{
+    font-size: 18px;
+    
+    }
+    #banner2>.texts>h1{
+    text-align: center;
+    }
+    
 .header>a>h1{
-   font-size: 38px;
+   font-size: 28px;
 }
 .categories>a>div>img{
-   height: 50px;
-   width: 50px;
+   height: 60px;
+   width: 60px;
+}
+
+/* .categories>a>div{
+    padding: 5px;
+    cursor: pointer;
+
+} */
+.categories>a>div>h2{
+    font-size: 12px;
+    /* font-weight: 700; */
+    margin-right: 10px;
 }
 }
 
