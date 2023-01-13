@@ -1,30 +1,50 @@
 /*Styles for the table*/
-#cartproduct{
-
-display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    margin-top: 30px;
-}
-#cartproduct>div{
-    padding: 20px;
-    border: 2px solid #ffb301;
-    border-radius: 10px;
-    height: 500px;
+#cartproduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
-#cartproduct>div>img{
-    height: 60%;
-    width: 100%;
+@media screen and (max-device-width:1000px) {
+  #cartproduct {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-#cartproduct>div>button{
-    height: 40px;
-    width: 80px;
-    margin-left: 30%;
-    background-color: #ffb301;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    margin-top: 5px;
-    cursor: pointer;
+
+@media screen and (max-device-width:500px) {
+  #cartproduct {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#qtdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cartproduct > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ffb301;
+  border-radius: 10px;
+  height: 500px;
+}
+
+#cartproduct > div > img {
+  height: 40%;
+  width: 100%;
+}
+#cartproduct > div > button,#qtdiv>button {
+  height: 40px;
+  width: 80px;
+  background-color: #ffb301;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
