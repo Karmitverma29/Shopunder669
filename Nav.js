@@ -50,6 +50,13 @@ function Navbar(){
 
 
      </div>
+     <div class="search-container">
+        <form>
+          <input type="text" placeholder="Search..." id="search-input">
+          <button type="submit" id="search-btn"><i class="fa fa-search">Search</i></button>
+        </form>
+      </div>
+
  `
 }
 
