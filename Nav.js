@@ -30,30 +30,35 @@ function Navbar(){
      <div class="categories">
         <a href="./Tshirts.html"> 
          <div>
-<img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dCUyMHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+<img src="./images/tshirts.jpg"/>
 <h2>T-Shirts</h2>           
          </div>
            </a>
            <a href="./hoodies.html">
          <div>
-<img src="https://images.unsplash.com/photo-1526476148966-98bd039463ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG9vZGllc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"/>
-<h2>Hoodies</h2>  
+<img src="./images/nightwear.jpg"/>
+<h2>Night wear</h2>  
 </div>
 </a>
 <a href="./pants.html">
          <div>
-             <img src="https://plus.unsplash.com/premium_photo-1663076093668-89e15a80156e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c3dlYXRzaGlydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+             <img src="./images/sweatshirts.jpg"/>
 <h2>Sweatshirts</h2>
          </div>
      </a>
   <a href="./books.html">    <div>
-             <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+             <img src="./images/books.jpg"/>
 <h2>Books</h2>
          </div>
      </a>   
     <a href="./watches.html">   <div>
-             <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VzdG9taXplJTIwdCUyMHNoaXJ0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"/>
-<h2>Custom</h2>
+             <img src="./images/boxers.jpg"/>
+<h2>Boxer's</h2>
+         </div>
+     </a>  
+     <a href="./watches.html">   <div>
+             <img src="./images/shorts.jpg"/>
+<h2>Shorts</h2>
          </div>
      </a>  
         
