@@ -79,6 +79,8 @@
        grid-template-columns: repeat(4,1fr);
        gap: 10px;
        margin-top: 30px;
+       width: 90%;
+       margin: auto;
    }
    #shirts>div{
        padding: 20px;

@@ -4,10 +4,10 @@ nav.innerHTML=Navbar();
 async function getdata(){
 
 
-    let res=await fetch(`https://dummyjson.com/products`);
+    let res=await fetch(`http://localhost:3000/clothes`);
     let data=await res.json();
-    console.log(data.products)
-    renderData(data.products);
+    console.log(data)
+    renderData(data);
 }
 getdata();
 
@@ -19,35 +19,22 @@ function renderData(data){
 
         let div=document.createElement("div");
         let img=document.createElement("img");
-        img.src=elem.images[0];
-        let brand=document.createElement("h2");
-        brand.innerText=elem.brand
-        let category=document.createElement("h3");
-        category.innerText=elem.category;
+        img.src=elem.image;
+        let name=document.createElement("h2");
+        name.innerText=elem.name
         let desc=document.createElement("p");
         desc.innerText=elem.description;
         let price=document.createElement("p");
         price.innerText=elem.price;
+        let offer_price=document.createElement("p");
+        offer_price.innerText=elem.offerPrice;
         let btn=document.createElement("button");
-        btn.innerText="Add to cart";
-        btn.addEventListener("click",()=>{
-            let arrydata=JSON.parse(localStorage.getItem("products"))||[];
-            let obj={
-                image:elem.images[0],
-                brand:elem.brand,
-                category:elem.category,
-                price:elem.price,
-                id:arrydata.length+1,
-                quantity:1
-            }
-            arrydata.push(obj);
-            localStorage.setItem("products",JSON.stringify(arrydata));
-        })
+        btn.innerText="Order Now";
         img.addEventListener("click", () => {
           
             window.location.href = `indiProduct.html?id=${elem.id}`;
         });
-        div.append(img,brand,category,desc,price,btn);
+        div.append(img,name,desc,price,offer_price,btn);
         container.append(div);
 
     })

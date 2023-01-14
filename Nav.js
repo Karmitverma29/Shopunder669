@@ -11,7 +11,7 @@ function Navbar(){
     <div class=cred>
 <button>Login</button>
 <button>Signup</button>
- <a href="./cart.html"> <h2>Cart</h2> </a>
+ 
 
 
      </div>
