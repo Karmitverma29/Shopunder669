@@ -61,6 +61,11 @@ function Navbar(){
 <h2>Shorts</h2>
          </div>
      </a>  
+     <a href="./caps.html">   <div>
+     <img src="./images/caps.jpeg"/>
+<h2>Caps</h2>
+ </div>
+</a>  
         
      </div>
      

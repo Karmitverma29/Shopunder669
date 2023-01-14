@@ -23,22 +23,9 @@ async function getProductDetails() {
     productDesc.innerText = data.description;
     let btn=document.getElementById("add-btn");
     btn.innerText="Add to cart";
-    // btn.addEventListener("click",(elem)=>{
-    //     let existingData = JSON.parse(localStorage.getItem("products")) || [];
-    
-    //     let newProduct = {
-    //         image: elem.images,
-    //         brand: elem.brand,
-    //         category: elem.category,
-    //         price: elem.price,
-    //         id: existingData.length + 1,
-    //         quantity: 1
-    //     }
-    
-    //     existingData.push(newProduct);
-    
-    //     localStorage.setItem("products", JSON.stringify(newProduct));
-    // });
+    btn.addEventListener("click",()=>{
+        addtocart(data)
+    })
     
     
     
@@ -46,4 +33,21 @@ async function getProductDetails() {
     
 }
 getProductDetails();
+
+const addtocart=(data)=>{
+
+    let getdata=JSON.parse(localStorage.getItem("products"))||[];
+
+    let obj={
+        image:data.images[0],
+                brand:data.brand,
+                category:data.category,
+                price:data.price,
+                id:getdata.length+1,
+                quantity:1
+    }
+
+    getdata.push(obj);
+    localStorage.setItem("products",JSON.stringify(getdata));
+}
 
