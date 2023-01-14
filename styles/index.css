@@ -238,10 +238,12 @@ cursor: pointer;
     
 .header>a>h1{
    font-size: 28px;
+   margin-top: 4px;
 }
 .categories>a>div>img{
-   height: 60px;
-   width: 60px;
+   height: 55px;
+   width: 50px;
+   margin-left: 5px;
 }
 
 /* .categories>a>div{
@@ -250,8 +252,18 @@ cursor: pointer;
 
 } */
 .categories>a>div>h2{
-    font-size: 12px;
+    font-size: 10px;
     /* font-weight: 700; */
-    margin-right: 10px;
+    margin-right:5px;
+    margin-top: 10px;
 }
+.cred>a>h2{
+   font-size: 18px;
+
+}
+.cred>button{
+    margin-right: 4px;
+    margin-bottom: 10px;
+    
+    }
 }
