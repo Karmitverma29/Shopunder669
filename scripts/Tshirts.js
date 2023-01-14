@@ -43,6 +43,10 @@ function renderData(data){
             arrydata.push(obj);
             localStorage.setItem("products",JSON.stringify(arrydata));
         })
+        img.addEventListener("click", () => {
+          
+            window.location.href = `indiProduct.html?id=${elem.id}`;
+        });
         div.append(img,brand,category,desc,price,btn);
         container.append(div);
 
