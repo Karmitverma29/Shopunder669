@@ -30,6 +30,18 @@ function renderData(data){
         offer_price.innerText=elem.offerPrice;
         let btn=document.createElement("button");
         btn.innerText="Order Now";
+        btn.addEventListener("click",()=>{
+            let storeData={
+                image:elem.image,
+                name:elem.name,
+                description:elem.description,
+                price:elem.price,
+                offer_price:elem.offerPrice
+            }
+         
+
+            localStorage.setItem("products",JSON.stringify(storeData));
+        })
         img.addEventListener("click", () => {
           
             window.location.href = `indiProduct.html?id=${elem.id}`;

@@ -2,11 +2,11 @@
   "clothes": [
     {
       "id": 1,
-      "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "name": "T-Shirt",
-      "description": "A basic black T-shirt made from soft cotton",
-      "price": 20,
-      "offerPrice": 15
+      "image": "https://media.istockphoto.com/id/1340904625/photo/oversized-hooded-sweatshirt-mockup-for-print.jpg?b=1&s=170667a&w=0&k=20&c=-9WDorPCi015bbUrFfjDsZnLR8HvG7NLKTevTqzMqzc=",
+      "name": "Hoodie",
+      "description": "red",
+      "price": "5999",
+      "offerPrice": "4999"
     },
     {
       "id": 2,
@@ -162,11 +162,11 @@
     },
     {
       "id": "21",
-      "image": "https://media.istockphoto.com/id/1340904625/photo/oversized-hooded-sweatshirt-mockup-for-print.jpg?b=1&s=170667a&w=0&k=20&c=-9WDorPCi015bbUrFfjDsZnLR8HvG7NLKTevTqzMqzc=",
+      "image": "https://media.istockphoto.com/id/1387710942/photo/emotional-african-american-man-with-african-hairstyle.jpg?b=1&s=170667a&w=0&k=20&c=-Dfx746sVaIv_Lh5ylcT2HTiW-_4juhT-QSpTL9Vg_A=",
       "name": "Hoodie",
-      "description": "Red colored hoodie",
-      "price": "4999",
-      "offerPrice": "3999"
+      "description": "hbjnk",
+      "price": "67657",
+      "offerPrice": "2445"
     }
   ]
 }

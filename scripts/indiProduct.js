@@ -21,6 +21,18 @@ async function getProductDetails() {
     productDesc.innerText = data.description;
     let btn=document.getElementById("add-btn");
     btn.innerText="Order Now";
+    btn.addEventListener("click",()=>{
+        let storeData={
+            image:data.image,
+            name:data.name,
+            description:data.description,
+            price:data.price,
+            offer_price:data.offerPrice
+        }
+       
+
+        localStorage.setItem("products",JSON.stringify(storeData));
+    })
    
     
     

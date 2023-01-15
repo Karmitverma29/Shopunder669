@@ -75,6 +75,7 @@ updateButton.addEventListener("click", function () {
       } else {
         throw new Error("Error updating item");
       }
+      console.log(response)
     })
     .then((data) => {
       alert("Item updated successfully");
