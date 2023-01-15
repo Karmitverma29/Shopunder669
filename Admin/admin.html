@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD Example</title>
+    <link rel="stylesheet" type="text/css" href="./admin.css">
+  </head>
+  <body>
+    <h1>Clothes CRUD</h1>
+    <div id="create-form">
+      <h2>Create</h2>
+      <form class="show">
+        <label for="create-id">ID:</label>
+        <input type="text" id="create-id" name="create-id">
+        <br>
+        <label for="create-image">Image:</label>
+        <input type="text" id="create-image" name="create-image">
+        <br>
+        <label for="create-name">Name:</label>
+        <input type="text" id="create-name" name="create-name">
+        <br>
+        <label for="create-description">Description:</label>
+        <input type="text" id="create-description" name="create-description">
+        <br>
+        <label for="create-price">Price:</label>
+        <input type="text" id="create-price" name="create-price">
+        <br>
+        <label for="create-offer-price">Offer Price:</label>
+        <input type="text" id="create-offer-price" name="create-offer-price">
+        <br>
+        <button type="button" id="create-button">Create</button>
+        </form>
+        </div>
+        <div id="read-form">
+        <h2>Read</h2>
+        <form class="show">
+        <label for="read-id">ID:</label>
+        <input type="text" id="read-id" name="read-id">
+        <br>
+        <button type="button" id="read-button">Read</button>
+        <br>
+        <div id="read-output"></div>
+        </form>
+        </div>
+        <div id="update-form">
+        <h2>Update</h2>
+        <form class="show">
+            <label for="update-id">ID:</label>
+            <input type="text" id="update-id" required>
+            <label for="update-image">Image:</label>
+            <input type="text" id="update-image" required>
+            <label for="update-name">Name:</label>
+            <input type="text" id="update-name" required>
+            <label for="update-description">Description:</label>
+            <input type="text" id="update-description" required>
+            <label for="update-price">Price:</label>
+            <input type="text" id="update-price" required>
+            <label for="update-offer-price">Offer Price:</label>
+            <input type="text" id="update-offer-price" required>
+            <button id="update-button">Update</button>
+          </form>
+        </div>
+        <div id="delete-form">
+        <h2>Delete</h2>
+        <form class="show">
+        <label for="delete-id">ID:</label>
+        <input type="text" id="delete-id" name="delete-id">
+        <br>
+        <button type="button" id="delete-button">Delete</button>
+        </form>
+        </div>
+        
+          </body>
+        </html>
+<script src="./admin.js"></script>
+>

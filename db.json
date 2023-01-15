@@ -1,170 +1,172 @@
-
+{
+  "clothes": [
     {
-        "clothes": [
-          {
-            "id": 1,
-            "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            "name": "T-Shirt",
-            "description": "A basic black T-shirt made from soft cotton",
-            "price": 20,
-            "offerPrice": 15
-          },
-          {
-            "id": 2,
-            "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            "name": "Jeans",
-            "description": "A pair of classic blue jeans with a straight leg fit",
-            "price": 30,
-            "offerPrice": 25
-          },
-          {
-            "id": 3,
-            "image": "https://media.istockphoto.com/id/1346250159/photo/man-puts-on-boots.jpg?b=1&s=170667a&w=0&k=20&c=-p33ccOW6eY0W0Bj8lqWC8q6iqNvv7K11VIITIS1RB4=",
-            "name": "Sneakers",
-            "description": "A pair of white and black sneakers with a comfortable sole",
-            "price": 50,
-            "offerPrice": 40
-          },
-          {
-            "id": 4,
-            "image": "https://media.istockphoto.com/id/1440041980/photo/blue-pants-isolated-in-white-background-invisible-mannequin.jpg?b=1&s=170667a&w=0&k=20&c=rGnOOJLBiRlh62KBDeDhr7FPZjef3l4xT0KoFjtDuOI=",
-            "name": "Dress",
-            "description": "A flowy summer dress with a floral print",
-            "price": 40,
-            "offerPrice": 35
-          },
-          {
-            "id": 5,
-            "image": "https://images.unsplash.com/photo-1624378441864-6eda7eac51cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            "name": "Shirt",
-            "description": "A classic white button-up shirt made from soft cotton",
-            "price": 25,
-            "offerPrice": 20
-          },
-          {
-            "id": 6,
-            "image": "https://images.unsplash.com/photo-1584865288642-42078afe6942?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-            "name": "Jacket",
-            "description": "A black leather jacket with a zip-up front and pockets",
-            "price": 60,
-            "offerPrice": 50
-          },
-          {
-            "id": 7,
-            "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-            "name": "Blouse",
-            "description": "A sheer white blouse with a ruffle collar and button-up front",
-            "price": 35,
-            "offerPrice": 30
-          },
-          {
-            "id": 8,
-            "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-            "name": "Sweater",
-            "description": "A cozy grey sweater made from soft wool",
-            "price": 40,
-            "offerPrice": 35
-          },
-          {
-            "id": 9,
-            "image": "https://media.istockphoto.com/id/1339560705/photo/portrait-of-a-man-with-a-custom-made-hoodie.jpg?b=1&s=170667a&w=0&k=20&c=6lh4nzzXEdzMR2LPXFGVJ6FbbLJ2vmw6FviKehv_4f0=",
-            "name": "Skirt",
-            "description": "A black pencil skirt with a hidden zipper and slit in the back",
-            "price": 30,
-            "offerPrice": 25
-          },
-          {
-            "id": 10,
-            "image": "https://media.istockphoto.com/id/1447329953/photo/black-male-model-wears-a-denim-jacket-and-is-in-front-of-a-white-background.jpg?b=1&s=170667a&w=0&k=20&c=fUWzYcawBe8DW85j-sWHV_4ayogYoAtq3_Xc9Kdzlo8=",
-            "name": "Hat",
-            "description": "A black fedora hat with a ribbon band",
-            "price": 15,
-            "offerPrice": 10
-          },
-          {
-            "id": 11,
-            "image": "https://media.istockphoto.com/id/1349128674/photo/young-man-in-black-sweatshirt-putting-his-hood-up-on-the-outside.jpg?b=1&s=170667a&w=0&k=20&c=Z7J8xhY1XLO0yCe_K-KAaRS9mgeW8sncR-y703vHPuU=",
-            "name": "Bag",
-            "description": "A brown leather shoulder bag with a gold chain strap",
-            "price": 45,
-            "offerPrice": 40
-          },
-          {
-            "id": 12,
-            "image": "https://media.istockphoto.com/id/1333081908/photo/beautiful-emotional-woman.jpg?b=1&s=170667a&w=0&k=20&c=lmwJ9O5uPc1da3_IwhUR2VEmGrU9wQ6ZvExAGDg0SCE=",
-            "name": "Sunglasses",
-            "description": "A pair of black wayfarer sunglasses with UV protection",
-            "price": 20,
-            "offerPrice": 15
-          },
-          {
-            "id": 13,
-            "image": "https://images.unsplash.com/photo-1619184324666-a2912be71bad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-            "name": "Watch",
-            "description": "A silver analog watch with a leather strap",
-            "price": 35,
-            "offerPrice": 30
-          },
-          {
-            "id": 14,
-            "image": "https://images.unsplash.com/photo-1534215754734-18e55d13e346?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fwc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-            "name": "Sandals",
-            "description": "A pair of brown leather sandals with a comfortable sole",
-            "price": 25,
-            "offerPrice": 20
-          },
-          {
-            "id": 15,
-            "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fwc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-            "name": "Scarf",
-            "description": "A red and black plaid scarf made from soft wool",
-            "price": 15,
-            "offerPrice": 10
-          },
-          {
-            "id": 16,
-            "image": "https://media.istockphoto.com/id/1332373959/photo/very-happy-young-man-man.jpg?b=1&s=170667a&w=0&k=20&c=oyeVqtXJ9mpGYfJ6BYHYkR9pyufVVhIonT4J1oU4sWE=",
-            "name": "Boots",
-            "description": "A pair of black suede boots with a low heel",
-            "price": 50,
-            "offerPrice": 45
-          },
-          {
-            "id": 17,
-            "image": "https://media.istockphoto.com/id/1305794403/photo/mens-short-sleeve-t-shirt-mockup-in-front-side-and-back-views.jpg?b=1&s=170667a&w=0&k=20&c=TozKYO_jKNSkhb-NzS1TBJ9QX2oYk5Vq9SvUrRCAlaw=",
-            "name": "Earrings",
-            "description": "A pair of gold hoop earrings with a secure clasp",
-            "price": 10,
-            "offerPrice": 8
-          },
-          {
-            "id": 18,
-            "image": "https://media.istockphoto.com/id/1334098846/photo/close-up-orange-t-shirt-cotton-man-pattern-isolated-on-white.jpg?b=1&s=170667a&w=0&k=20&c=WP0zJdEfLwnsUD8hROulV_92j6x01aJHedFSvaX8vV0=",
-            "name": "Pants",
-            "description": "A pair of black dress pants with a straight leg fit",
-            "price":29,
-            "offerPrice":19
-          },
-          {
-            "id": 19,
-            "image": "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            "name": "Blazer",
-            "description": "A black blazer with a slim fit and two button closure",
-            "price": 55,
-            "offerPrice": 50
-          },
-          {
-            "id": 20,
-            "image": "https://images.unsplash.com/photo-1626497764746-6dc36546b388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            "name": "Necklace",
-            "description": "A gold chain necklace with a delicate pendant",
-            "price": 12,
-            "offerPrice": 10
-          }
-      
-      
-
-        ]
-         
-      
-        }
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "name": "T-Shirt",
+      "description": "A basic black T-shirt made from soft cotton",
+      "price": 20,
+      "offerPrice": 15
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "name": "Jeans",
+      "description": "A pair of classic blue jeans with a straight leg fit",
+      "price": 30,
+      "offerPrice": 25
+    },
+    {
+      "id": 3,
+      "image": "https://media.istockphoto.com/id/1346250159/photo/man-puts-on-boots.jpg?b=1&s=170667a&w=0&k=20&c=-p33ccOW6eY0W0Bj8lqWC8q6iqNvv7K11VIITIS1RB4=",
+      "name": "Sneakers",
+      "description": "A pair of white and black sneakers with a comfortable sole",
+      "price": 50,
+      "offerPrice": 40
+    },
+    {
+      "id": 4,
+      "image": "https://media.istockphoto.com/id/1440041980/photo/blue-pants-isolated-in-white-background-invisible-mannequin.jpg?b=1&s=170667a&w=0&k=20&c=rGnOOJLBiRlh62KBDeDhr7FPZjef3l4xT0KoFjtDuOI=",
+      "name": "Dress",
+      "description": "A flowy summer dress with a floral print",
+      "price": 40,
+      "offerPrice": 35
+    },
+    {
+      "id": 5,
+      "image": "https://images.unsplash.com/photo-1624378441864-6eda7eac51cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "name": "Shirt",
+      "description": "A classic white button-up shirt made from soft cotton",
+      "price": 25,
+      "offerPrice": 20
+    },
+    {
+      "id": 6,
+      "image": "https://images.unsplash.com/photo-1584865288642-42078afe6942?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "name": "Jacket",
+      "description": "A black leather jacket with a zip-up front and pockets",
+      "price": 60,
+      "offerPrice": 50
+    },
+    {
+      "id": 7,
+      "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "name": "Blouse",
+      "description": "A sheer white blouse with a ruffle collar and button-up front",
+      "price": 35,
+      "offerPrice": 30
+    },
+    {
+      "id": 8,
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "name": "Sweater",
+      "description": "A cozy grey sweater made from soft wool",
+      "price": 40,
+      "offerPrice": 35
+    },
+    {
+      "id": 9,
+      "image": "https://media.istockphoto.com/id/1339560705/photo/portrait-of-a-man-with-a-custom-made-hoodie.jpg?b=1&s=170667a&w=0&k=20&c=6lh4nzzXEdzMR2LPXFGVJ6FbbLJ2vmw6FviKehv_4f0=",
+      "name": "Skirt",
+      "description": "A black pencil skirt with a hidden zipper and slit in the back",
+      "price": 30,
+      "offerPrice": 25
+    },
+    {
+      "id": 10,
+      "image": "https://media.istockphoto.com/id/1447329953/photo/black-male-model-wears-a-denim-jacket-and-is-in-front-of-a-white-background.jpg?b=1&s=170667a&w=0&k=20&c=fUWzYcawBe8DW85j-sWHV_4ayogYoAtq3_Xc9Kdzlo8=",
+      "name": "Hat",
+      "description": "A black fedora hat with a ribbon band",
+      "price": 15,
+      "offerPrice": 10
+    },
+    {
+      "id": 11,
+      "image": "https://media.istockphoto.com/id/1349128674/photo/young-man-in-black-sweatshirt-putting-his-hood-up-on-the-outside.jpg?b=1&s=170667a&w=0&k=20&c=Z7J8xhY1XLO0yCe_K-KAaRS9mgeW8sncR-y703vHPuU=",
+      "name": "Bag",
+      "description": "A brown leather shoulder bag with a gold chain strap",
+      "price": 45,
+      "offerPrice": 40
+    },
+    {
+      "id": 12,
+      "image": "https://media.istockphoto.com/id/1333081908/photo/beautiful-emotional-woman.jpg?b=1&s=170667a&w=0&k=20&c=lmwJ9O5uPc1da3_IwhUR2VEmGrU9wQ6ZvExAGDg0SCE=",
+      "name": "Sunglasses",
+      "description": "A pair of black wayfarer sunglasses with UV protection",
+      "price": 20,
+      "offerPrice": 15
+    },
+    {
+      "id": 13,
+      "image": "https://images.unsplash.com/photo-1619184324666-a2912be71bad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "name": "Watch",
+      "description": "A silver analog watch with a leather strap",
+      "price": 35,
+      "offerPrice": 30
+    },
+    {
+      "id": 14,
+      "image": "https://images.unsplash.com/photo-1534215754734-18e55d13e346?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fwc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "name": "Sandals",
+      "description": "A pair of brown leather sandals with a comfortable sole",
+      "price": 25,
+      "offerPrice": 20
+    },
+    {
+      "id": 15,
+      "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fwc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "name": "Scarf",
+      "description": "A red and black plaid scarf made from soft wool",
+      "price": 15,
+      "offerPrice": 10
+    },
+    {
+      "id": 16,
+      "image": "https://media.istockphoto.com/id/1332373959/photo/very-happy-young-man-man.jpg?b=1&s=170667a&w=0&k=20&c=oyeVqtXJ9mpGYfJ6BYHYkR9pyufVVhIonT4J1oU4sWE=",
+      "name": "Boots",
+      "description": "A pair of black suede boots with a low heel",
+      "price": 50,
+      "offerPrice": 45
+    },
+    {
+      "id": 17,
+      "image": "https://media.istockphoto.com/id/1305794403/photo/mens-short-sleeve-t-shirt-mockup-in-front-side-and-back-views.jpg?b=1&s=170667a&w=0&k=20&c=TozKYO_jKNSkhb-NzS1TBJ9QX2oYk5Vq9SvUrRCAlaw=",
+      "name": "Earrings",
+      "description": "A pair of gold hoop earrings with a secure clasp",
+      "price": 10,
+      "offerPrice": 8
+    },
+    {
+      "id": 18,
+      "image": "https://media.istockphoto.com/id/1334098846/photo/close-up-orange-t-shirt-cotton-man-pattern-isolated-on-white.jpg?b=1&s=170667a&w=0&k=20&c=WP0zJdEfLwnsUD8hROulV_92j6x01aJHedFSvaX8vV0=",
+      "name": "Pants",
+      "description": "A pair of black dress pants with a straight leg fit",
+      "price": 29,
+      "offerPrice": 19
+    },
+    {
+      "id": 19,
+      "image": "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "name": "Blazer",
+      "description": "A black blazer with a slim fit and two button closure",
+      "price": 55,
+      "offerPrice": 50
+    },
+    {
+      "id": 20,
+      "image": "https://images.unsplash.com/photo-1626497764746-6dc36546b388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "name": "Necklace",
+      "description": "A gold chain necklace with a delicate pendant",
+      "price": 12,
+      "offerPrice": 10
+    },
+    {
+      "id": "21",
+      "image": "https://media.istockphoto.com/id/1340904625/photo/oversized-hooded-sweatshirt-mockup-for-print.jpg?b=1&s=170667a&w=0&k=20&c=-9WDorPCi015bbUrFfjDsZnLR8HvG7NLKTevTqzMqzc=",
+      "name": "Hoodie",
+      "description": "Red colored hoodie",
+      "price": "4999",
+      "offerPrice": "3999"
+    }
+  ]
+}
