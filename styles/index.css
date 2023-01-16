@@ -10,7 +10,7 @@
    .navbar{
        height: 160px;
        width: 100%;
-       background-color: #ffff00;
+       background-color: #7f00ff;
        display: flex;
        align-items: center;
        justify-content: center;
@@ -55,7 +55,7 @@
    }
    .header{
        width: 100%;
-       background-color: #ffff00;
+       background-color: #7f00ff;
    }
    .header>a>h1{
        text-align: center;
@@ -77,10 +77,11 @@
 margin-right: 10px;
 height: 40px;
 width: 100px;
-background-color: #ffff00;
+background-color: #7f00ff;
 border: 2px solid black;
 border-radius: 10px;
 cursor: pointer;
+font-weight: 600;
    }
    .cred>h2{
        margin-right: 10px;
@@ -95,7 +96,7 @@ cursor: pointer;
 .banner{
 height: 600px;
 width:100%;
-background-color: #ffff00;
+background-color: #7f00ff;
 margin-top: 60px;
 display: grid;
 grid-template-columns: repeat(2,1fr);
@@ -109,7 +110,7 @@ font-size: 48px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #ffff00;
+background-color: #7f00ff;
 
 
 }
@@ -123,10 +124,10 @@ width: 100%;
 margin-top: 100px;
 display: grid;
 grid-template-columns: repeat(2,1fr);
-background-color: #ffff00;
+background-color: #7f00ff;
 }
 #banner2>div{
-background-color: #ffff00;
+background-color: #7f00ff;
 
 }
 #banner2>.texts{
@@ -166,14 +167,14 @@ width: 80%;
     transform: scale(1.2);
     transition: 1s ease;
     border-radius: 10px;
-    border: 2px solid #ffff00;
+    border: 2px solid #7f00ff;
    }
   #search-input {
     width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #ffff00;
+    border: 2px solid #7f00ff;
     border-radius: 10px;
     
 
@@ -195,13 +196,15 @@ align-items: center;
   }
   .top>.search-container>form>button{
     width: 80px;
-    background-color: #ffff00;
+    background-color: #7f00ff;
     height:45px ;
     color: black;
     margin-left: 15px;
     border: 2px solid black;
     border-radius: 10px;
 cursor: pointer;
+font-weight: 600;
+
   }
 
   @media screen and (max-width:500px) and (min-width:320px){
@@ -217,7 +220,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffff00;
+    background-color: #7f00ff;
     
     
     }

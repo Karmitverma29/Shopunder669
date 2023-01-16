@@ -167,6 +167,14 @@
       "description": "hbjnk",
       "price": "67657",
       "offerPrice": "2445"
+    },
+    {
+      "id": "22",
+      "image": "https://media.istockphoto.com/id/1392944438/photo/portrait-of-handsome-attractive-positive-curly-haired-indian-or-arabian-guy-wearing-white.jpg?b=1&s=170667a&w=0&k=20&c=AuDfv9PdKqXO3nKHFc-uBZ1bt0SXXceqFLo-OhJnI6o=",
+      "name": "T-shirt",
+      "description": "Whites",
+      "price": "999",
+      "offerPrice": "899"
     }
   ]
 }

@@ -25,18 +25,7 @@ createButton.addEventListener("click", function () {
     });
 });
 
-readButton.addEventListener("click", function () {
-  const id = document.getElementById("read-id").value;
 
-  fetch(`http://localhost:3000/clothes/${id}`)
-    .then((response) => response.json())
-    .then((data) => {
-      document.getElementById("read-output").innerHTML = JSON.stringify(data);
-    })
-    .catch((error) => {
-      alert("Error: " + error);
-    });
-});
 
 updateButton.addEventListener("click", function () {
   const id = document.getElementById("update-id").value;
