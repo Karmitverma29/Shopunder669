@@ -5,7 +5,6 @@ env.config();
 const database_connection = require("./Configs/DB");
 const bcrypt=require("bcrypt");
 const jwt=require("jsonwebtoken");
-const API = require("./Routes/api.route");
 const UserModel = require("./Models/User.model");
 const port=process.env.PORT || 3400;
 const cors=require("cors");
@@ -16,9 +15,10 @@ app.use(express.json());
 app.use(cors({
   origin:"*"
 }));
-app.use("/api",API);
 app.use("/user",user);
-
+app.get("/",(req,res)=>{
+res.send("Backend is deployed")
+})
 app.post("/signup", async (req, res) => {
     try {
       let data = await UserModel.find({ email: req.body.email });
