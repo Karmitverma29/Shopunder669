@@ -11,7 +11,7 @@ createButton.addEventListener("click", function () {
   const price = document.getElementById("create-price").value;
   const offerPrice = document.getElementById("create-offer-price").value;
 
-  fetch("http://localhost:3000/clothes", {
+  fetch("https://energetic-pea-coat-dog.cyclic.app/product", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ id, image, name, description, price, offerPrice }),
@@ -51,7 +51,7 @@ updateButton.addEventListener("click", function () {
   if (offerPrice != "") {
     item.offerPrice = offerPrice;
   }
-  fetch(`http://localhost:3000/clothes/${id}`, {
+  fetch(`https://energetic-pea-coat-dog.cyclic.app/product/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -78,7 +78,7 @@ updateButton.addEventListener("click", function () {
 deleteButton.addEventListener("click", function () {
   const id = document.getElementById("delete-id").value;
 
-  fetch(`http://localhost:3000/clothes/${id}`, {
+  fetch(`https://energetic-pea-coat-dog.cyclic.app/product/${id}`, {
     method: "DELETE",
   })
     .then((response) => response.json())

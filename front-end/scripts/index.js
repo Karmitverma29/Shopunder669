@@ -53,3 +53,6 @@ document.getElementById("search-btn").addEventListener("click", function(e) {
     }
     return base64;
   }
+
+  
+  
