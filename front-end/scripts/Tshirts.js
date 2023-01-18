@@ -4,7 +4,7 @@ nav.innerHTML=Navbar();
 async function getdata(){
 
 
-    let res=await fetch(`http://localhost:3000/clothes`);
+    let res=await fetch(`https://energetic-pea-coat-dog.cyclic.app/product`);
     let data=await res.json();
     console.log(data)
     renderData(data);

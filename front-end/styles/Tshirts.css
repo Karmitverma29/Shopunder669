@@ -7,7 +7,7 @@
    }
    .header{
        width: 100%;
-       background-color: #7f00ff;
+       background-color: #ffffff;
    }
    .header>a>h1{
        text-align: center;
@@ -20,7 +20,7 @@
    .navbar{
        height: 160px;
        width: 100%;
-       background-color: #7f00ff;
+       background-color: #ffffff;
        display: flex;
        align-items: center;
        justify-content: center;
@@ -107,7 +107,7 @@
        height: 40px;
        width: 80px;
        margin-left: 30%;
-       background-color: #7f00ff;
+       background-color: #ffffff;
        color: black;
        border: none;
        border-radius: 10px;
@@ -147,7 +147,7 @@ margin-top: 5px;
 margin-right: 10px;
 height: 40px;
 width: 100px;
-background-color: #7f00ff;
+background-color: #ffffff;
 border: 2px solid black;
 border-radius: 10px;
 font-weight: 600;
@@ -172,7 +172,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7f00ff;
+    background-color: #ffffff;
     
     
     }
@@ -226,7 +226,7 @@ cursor: pointer;
     height: 40px;
     width: 80px;
     margin-right:70px;
-    background-color: #7f00ff;
+    background-color: #ffffff;
     color: #ffffff;
     border: none;
     border-radius: 10px;
@@ -266,7 +266,7 @@ margin-top: 5px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #7f00ff;
+    border: 2px solid black;
     border-radius: 10px;
   }
   
@@ -283,7 +283,7 @@ align-items: center;
   }
   .top>.search-container>form>button{
     width: 80px;
-    background-color: #7f00ff;
+    background-color: #ffffff;
     height:45px ;
     color: black;
     margin-left: 15px;
