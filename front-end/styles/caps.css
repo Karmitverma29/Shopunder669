@@ -7,7 +7,7 @@
    }
    .header{
        width: 100%;
-       background-color: #7f00ff;
+       background-color: #ffffff;
    }
    .header>a>h1{
        text-align: center;
@@ -20,7 +20,7 @@
    .navbar{
        height: 160px;
        width: 100%;
-       background-color: #7f00ff;
+       background-color: #ffffff;
        display: flex;
        align-items: center;
        justify-content: center;
@@ -69,7 +69,7 @@
    }
    #shirts>div{
        padding: 20px;
-       border: 2px solid #7f00ff;
+       border: 2px solid #ffffff;
        border-radius: 10px;
        height: 500px;
    }
@@ -86,7 +86,7 @@
         transform: scale(1.2);
         transition: 1s ease;
         border-radius: 10px;
-        border: 2px solid #7f00ff;
+        border: 2px solid #ffffff;
         
    }
    #shirts>div>button{
@@ -94,7 +94,7 @@
        height: 40px;
        width: 80px;
        margin-left: 30%;
-       background-color: #7f00ff;
+       background-color: #ffffff;
        color: #ffffff;
        border: none;
        border-radius: 10px;
@@ -134,7 +134,7 @@ margin-top: 5px;
 margin-right: 10px;
 height: 40px;
 width: 100px;
-background-color: #7f00ff;
+background-color: #ffffff;
 border: 2px solid black;
 border-radius: 10px;
 font-weight: 600;
@@ -159,7 +159,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7f00ff;
+    background-color: #ffffff;
     
     
     }
@@ -213,7 +213,7 @@ cursor: pointer;
     height: 40px;
     width: 80px;
     margin-right:70px;
-    background-color: #7f00ff;
+    background-color: #ffffff;
     color: #ffffff;
     border: none;
     border-radius: 10px;
@@ -247,15 +247,27 @@ margin-top: 5px;
     margin: 0 auto;
     text-align: center;
   }
-  
+  .categories>a>div>img:hover{
+    transition: 1s ease;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    border-radius: 10px;
+    border: 2px solid black;
+   }
+   .cred a{
+    text-decoration: none;
+  }
   #search-input {
     width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #7f00ff;
+    border: 2px solid black;
     border-radius: 10px;
   }
+  
   .top{
     display: flex;
     justify-content: center;
@@ -266,21 +278,9 @@ margin-top: 5px;
 justify-content: center;
 align-items: center;
   }
-  .categories>a>div>img:hover{
-    transition: 1s ease;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: 1s ease;
-    border-radius: 10px;
-    border: 2px solid #7f00ff;
-   }
-   .cred a{
-    text-decoration: none;
-  }
   .top>.search-container>form>button{
     width: 80px;
-    background-color: #7f00ff;
+    background-color: #ffffff;
     height:45px ;
     color: black;
     margin-left: 15px;
@@ -291,7 +291,7 @@ align-items: center;
 cursor: pointer;
   }
   #search-btn:hover {
-    background-color: #7f00ff;
+    background-color: #ffffff;
   }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

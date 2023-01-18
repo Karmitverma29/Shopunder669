@@ -1,5 +1,6 @@
 const mongoose=require("mongoose");
 const ProductSchema=mongoose.Schema({
+    id:Number,
     image:String,
     name:String,
     category:String,
