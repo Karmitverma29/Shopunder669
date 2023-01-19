@@ -294,6 +294,9 @@ cursor: pointer;
 font-weight: 600;
 
   }
+  .logoname{
+    font-family:fantasy;
+  }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     #shirts{

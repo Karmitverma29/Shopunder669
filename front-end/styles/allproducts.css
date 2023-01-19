@@ -155,6 +155,9 @@ font-weight: 600;
 
 cursor: pointer;
    }
+   .logoname{
+    font-family:fantasy;
+  }
    .cred>h2{
        margin-right: 10px;
 cursor: pointer;

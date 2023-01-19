@@ -19,7 +19,7 @@ function Navbar(){
 </div>
     <div class="header">
        
-    <a href="./index.html"> <h1>Shopunder669</h1> </a>
+    <a href="./index.html">  <h1 class="logoname">SHOPUNDER669</h1> </a>
  </div>
  
      
