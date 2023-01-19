@@ -4,31 +4,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+<link rel="stylesheet" href="./styles/footer.css">
     <!-- Next two lines are used for Footer code -->
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
 
 
  <!-- Next two lines are used for Header code -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/Header.css">
+    <link rel="stylesheet" href="./styles/search.css">
 </head>
 <body>
     <div id="Header"></div>
     <div id="nav"></div>
+<div id="searched"></div>
+
+    <footer  class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>GetHelp</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>onlineShop</h4>
+                    <ul>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Caps</a></li>
+                        <li><a href="#">Hoodies</a></li>
+                        <li><a href="#">Pants</a></li>
+                     <li><a href="#">Tshirts</a></li>
+                     <li><a href="#">watches</a></li>
+                     <li><a href="#">Shorts</a></li>
+                   
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>followUs</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
     
-    <div id="Footer"></div>
+    <!-- <div id="Footer"></div> -->
 </body>
 </html>
-<script type="module">
-
-import Header from '../Header.js'
-    let head = document.querySelector('#Header')
-    head.innerHTML =Header();
-
-
-    import Footer from './Footer.js'
-    let container = document.querySelector('#Footer')
-       container.innerHTML =Footer();
-</script>
+<script type="module" src="./scripts/search.js"></script>

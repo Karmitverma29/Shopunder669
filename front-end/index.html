@@ -7,7 +7,6 @@
 
     <title>Document</title>
     
-    <!-- <link href="https://fonts.cdnfonts.com/css/american-captain-2" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="./styles/index.css" />
     
@@ -21,16 +20,35 @@
 
   </head>
   <body>
-    <div id="Header"></div>
+    <!-- <div id="Header"></div> -->
+    <header>
+      <nav>
+          <ul class='nav-bar'>
+             
+              <input type='checkbox' id='check' />
+              <span class="menu">
+                  <li><a href="./">Home</a></li>
+                  <li><a href="./">Cart</a></li>
+                  <li><a href="./">About</a></li>
+                  <li><a href="./caps.html">Caps</a></li>
+                  <li><a href="./books.html">Books</a></li>
+                  <li><a href="./watches.html">Boxer's</a></li>
+                  <li><a href="./Tshirts.html">Tshirts</a></li>
+                  <li><a href="./shorts.html">Shorts</a></li>
+                  <li><a href="./pants.html">Sweatshirts</a></li>
+                  <li><a href="./hoodies.html">Nightwear</a></li>
+                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+              </span>
+              <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+          </ul>
+      </nav>
+      </header>
     <div id="navbar">
       <div class="header">
         <a href="/index.html"> <h1>Shopunder669</h1> </a>
       </div>
-      <div class="navbar">
-        <!-- <div class="logo">
-            <a href="./index.html"> <img src="./669.jpeg" alt="">
-            </div>
-         </a> -->
+       <div class="navbar"> 
+        
          <div class="categories">
             <a href="./Tshirts.html"> 
              <div>
@@ -63,7 +81,7 @@
             
          </div>
          
-     </div>
+     </div> -->
      <div class=cred>
     <button>Login</button>
     <button>Signup</button>
@@ -205,7 +223,54 @@
 <img style="height: 80%; width: 80%;" src="./images/blackrichhoodie.png" alt="">
     </div>
     
-    <div  id="Footer"></div>
+    <!-- <div  id="Footer"></div> -->
+    <footer  class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">our services</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                      
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>GetHelp</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">shipping</a></li>
+                      <li><a href="#">returns</a></li>
+                      <li><a href="#">order status</a></li>
+                      <li><a href="#">payment options</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>onlineShop</h4>
+                  <ul>
+                      <li><a href="#">Books</a></li>
+                      <li><a href="#">Caps</a></li>
+                      <li><a href="#">Hoodies</a></li>
+                      <li><a href="#">Pants</a></li>
+                   <li><a href="#">Tshirts</a></li>
+                   <li><a href="#">watches</a></li>
+                   <li><a href="#">Shorts</a></li>
+                 
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>followUs</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </footer>
   </body>
   
 </html>
@@ -213,7 +278,7 @@
 
 
 <!-- This script is used for footer code --> 
- <script type="module">
+ <!-- <script type="module">
   import Header from '../Header.js'
     let head = document.querySelector('#Header')
     head.innerHTML =Header();
@@ -221,4 +286,4 @@
   import Footer from './Footer.js'
   let container = document.querySelector('#Footer')
      container.innerHTML =Footer();
-</script>
+</script> -->

@@ -2,6 +2,14 @@ import Navbar from "../Nav.js";
 
 let nav=document.getElementById("nav");
 nav.innerHTML=Navbar();
+import Header from '../Header.js';
+
+
+    let head = document.querySelector('#Header')
+    head.innerHTML =Header();
+    import Footer from '../Footer.js'
+    let container = document.querySelector('#Footer')
+       container.innerHTML =Footer();
 
 async function getdata(){
 

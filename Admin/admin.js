@@ -42,51 +42,51 @@
 
 
 // updateButton.addEventListener("click", function () {
-//   const id = document.getElementById("update-id").value;
-//   const image = document.getElementById("update-image").value;
-//   const name = document.getElementById("update-name").value;
-//   const description = document.getElementById("update-description").value;
-//   const price = document.getElementById("update-price").value;
-//   const offerPrice = document.getElementById("update-offer-price").value;
+  // const id = document.getElementById("update-id").value;
+  // const image = document.getElementById("update-image").value;
+  // const name = document.getElementById("update-name").value;
+  // const description = document.getElementById("update-description").value;
+  // const price = document.getElementById("update-price").value;
+  // const offerPrice = document.getElementById("update-offer-price").value;
 
-//   const item = {};
-//   if (image != "") {
-//     item.image = image;
-//   }
-//   if (name != "") {
-//     item.name = name;
-//   }
-//   if (description != "") {
-//     item.description = description;
-//   }
-//   if (price != "") {
-//     item.price = price;
-//   }
-//   if (offerPrice != "") {
-//     item.offerPrice = offerPrice;
-//   }
-//   fetch(`https://energetic-pea-coat-dog.cyclic.app/update/${id}`, {
-//     method: "PATCH",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(item),
-//   })
-//     .then((response) => {
-//       if (response.ok) {
-//         return response.json();
-//       } else {
-//         throw new Error("Error updating item");
-//       }
-//       console.log(response)
-//     })
-//     .then((data) => {
-//       alert("Item updated successfully");
-//     })
-//     .catch((error) => {
-//       console.error("Error:", error);
-//       alert("Error updating item");
-//     });
+  // const item = {};
+  // if (image != "") {
+  //   item.image = image;
+  // }
+  // if (name != "") {
+  //   item.name = name;
+  // }
+  // if (description != "") {
+  //   item.description = description;
+  // }
+  // if (price != "") {
+  //   item.price = price;
+  // }
+  // if (offerPrice != "") {
+  //   item.offerPrice = offerPrice;
+  // }
+  // fetch(`https://energetic-pea-coat-dog.cyclic.app/update/${id}`, {
+  //   method: "PATCH",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(item),
+  // })
+  //   .then((response) => {
+  //     if (response.ok) {
+  //       return response.json();
+  //     } else {
+  //       throw new Error("Error updating item");
+  //     }
+  //     console.log(response)
+  //   })
+  //   .then((data) => {
+  //     alert("Item updated successfully");
+  //   })
+  //   .catch((error) => {
+  //     console.error("Error:", error);
+  //     alert("Error updating item");
+  //   });
 // });
 
 // deleteButton.addEventListener("click", function () {
@@ -190,16 +190,16 @@ container.innerHTML=null;
       modal.classList.remove("show");
     });
     let allData = JSON.parse(localStorage.getItem("student")) || [];
-    submit.addEventListener("click", () => {
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-      const gender = document.getElementById("gender").value;
-      const studentArray = new student(name, email, password, gender);
-      allData.push(studentArray);
-      localStorage.setItem("student", JSON.stringify(allData));
-      modal.classList.remove("show");
-    });
+    // submit.addEventListener("click", () => {
+    //   const name = document.getElementById("name").value;
+    //   const email = document.getElementById("email").value;
+    //   const password = document.getElementById("password").value;
+    //   const gender = document.getElementById("gender").value;
+    //   const studentArray = new student(name, email, password, gender);
+    //   allData.push(studentArray);
+    //   localStorage.setItem("student", JSON.stringify(allData));
+    //   modal.classList.remove("show");
+    // });
 })
 
 }
@@ -265,3 +265,52 @@ else{
 
 })
 
+document.getElementById("submit").addEventListener("click",()=>{
+
+  const id = document.getElementById("update-id").value;
+  const image = document.getElementById("update-image").value;
+  const name = document.getElementById("update-name").value;
+  const description = document.getElementById("update-description").value;
+  const price = document.getElementById("update-price").value;
+  const offerPrice = document.getElementById("update-offer-price").value;
+
+  const item = {};
+  if (image != "") {
+    item.image = image;
+  }
+  if (name != "") {
+    item.name = name;
+  }
+  if (description != "") {
+    item.description = description;
+  }
+  if (price != "") {
+    item.price = price;
+  }
+  if (offerPrice != "") {
+    item.offerPrice = offerPrice;
+  }
+  fetch(`https://energetic-pea-coat-dog.cyclic.app/product/update/${id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(item),
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Error updating item");
+      }
+      console.log(response)
+    })
+    .then((data) => {
+      alert("Item updated successfully");
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("Error updating item");
+    });
+console.log(item)
+})
