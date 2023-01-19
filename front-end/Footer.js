@@ -14,7 +14,7 @@ return `<footer  class="footer">
             </ul>
         </div>
         <div class="footer-col">
-            <h4>get help</h4>
+            <h4>GetHelp</h4>
             <ul>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">shipping</a></li>
@@ -24,7 +24,7 @@ return `<footer  class="footer">
             </ul>
         </div>
         <div class="footer-col">
-            <h4>online shop</h4>
+            <h4>onlineShop</h4>
             <ul>
                 <li><a href="#">Books</a></li>
                 <li><a href="#">Caps</a></li>
@@ -37,7 +37,7 @@ return `<footer  class="footer">
             </ul>
         </div>
         <div class="footer-col">
-            <h4>follow us</h4>
+            <h4>followUs</h4>
             <div class="social-links">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
