@@ -61,25 +61,25 @@
        width: 100px;
        border-radius: 50%;
    }
-   #shirts{
+   #caps{
        display: grid;
        grid-template-columns: repeat(4,1fr);
        gap: 10px;
        margin-top: 30px;
    }
-   #shirts>div{
+   #caps>div{
        padding: 20px;
        border: 2px solid #ffffff;
        border-radius: 10px;
        height: 500px;
    }
-   #shirts>div>img{
+   #caps>div>img{
        height: 60%;
        width: 100%;
        transition: 1s ease;
 }
 
-#shirts>div> img:hover{
+#caps>div> img:hover{
   
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
@@ -89,7 +89,7 @@
         border: 2px solid #ffffff;
         
    }
-   #shirts>div>button{
+   #caps>div>button{
 
        height: 40px;
        width: 80px;
@@ -103,19 +103,19 @@
 
 
    }
-   #shirts>div>h2{
+   #caps>div>h2{
 text-align: center;
 font-size: 18px;
 margin-top: 5px;
    }
-   #shirts>div>h3{
+   #caps>div>h3{
        text-align: center;
        font-size: 15px;
        margin-top: 5px;
 
 
    }
-   #shirts>div>p{
+   #caps>div>p{
        text-align: center;
        font-size: 14px;
        margin-top: 5px;
@@ -195,46 +195,47 @@ cursor: pointer;
     /* font-weight: 700; */
     margin-right: 10px;
 }
-#shirts{
+#caps{
    grid-template-columns: repeat(1,1fr);
 }
 
-#shirts>div{
+#caps>div{
     padding: 20px;
     height: 400px;
 }
-#shirts>div>img{
+#caps>div>img{
     height: 50%;
     width: 90%;
     margin-left: 15px;
 }
-#shirts>div>button{
+#caps>div>button{
 
     height: 40px;
     width: 80px;
     margin-right:70px;
     background-color: #ffffff;
-    color: #ffffff;
+    color: black;
     border: none;
     border-radius: 10px;
     margin-top: 10px;
     cursor: pointer;
+    border: 1px solid black;
 
 
 }
-#shirts>div>h2{
+#caps>div>h2{
 text-align: center;
 font-size: 18px;
 margin-top: 5px;
 }
-#shirts>div>h3{
+#caps>div>h3{
     text-align: center;
     font-size: 15px;
     margin-top: 5px;
 
 
 }
-#shirts>div>p{
+#caps>div>p{
     text-align: center;
     font-size: 14px;
     margin-top: 5px;

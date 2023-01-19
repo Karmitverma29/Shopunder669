@@ -5,7 +5,7 @@ const id = urlParams.get('id');
 
 // Make a server request to get the product details
 async function getProductDetails() {
-    let res = await fetch(`http://localhost:3000/clothes/${id}`);
+    let res = await fetch(`https://energetic-pea-coat-dog.cyclic.app/product/single/${id}`);
     let data = await res.json();
     console.log(data);
 
@@ -16,8 +16,11 @@ async function getProductDetails() {
     let name = document.getElementById("product-name");
     name.innerText = data.name;
     let productPrice = document.getElementById("product-price");
-    productPrice.innerText = data.price;
+    productPrice.innerText = "Price:"+" "+data.price;
     let productDesc = document.getElementById("product-desc");
+    let Offerprice = document.getElementById("offer-price");
+    Offerprice.innerText = "Offer Price:"+" "+data.offer_price;
+
     productDesc.innerText = data.description;
     let btn=document.getElementById("add-btn");
     btn.innerText="Order Now";

@@ -5,15 +5,25 @@
     <link rel="stylesheet" type="text/css" href="./admin.css">
   </head>
   <body>
-    <h1>Clothes CRUD</h1>
+
+    <div style="display: flex;justify-items: flex-start;align-items: center;width: 100%;height: 50px;
+    background-color: black;color: white;font-weight: 700;">
+      <h2 id="all" style="margin-right: 20px;margin-left: 10px;" >Manage Products</h2>
+      
+      <h2 id="add">Add Products</h2>
+
+    </div>
+
+    <div style="width: 100%;" id="container"></div>
+    <!-- <h1>Clothes CRUD</h1>
     <div id="create-form">
       <h2>Create</h2>
       <form class="show">
-        <label for="create-id">ID:</label>
-        <input type="text" id="create-id" name="create-id">
-        <br>
         <label for="create-image">Image:</label>
         <input type="text" id="create-image" name="create-image">
+        <br>
+        <label for="create-category">Category:</label>
+        <input type="text" id="create-category" name="create-category">
         <br>
         <label for="create-name">Name:</label>
         <input type="text" id="create-name" name="create-name">
@@ -30,7 +40,6 @@
         <button type="button" id="create-button">Create</button>
         </form>
         </div>
-       
         <div id="update-form">
         <h2>Update</h2>
         <form class="show">
@@ -57,9 +66,21 @@
         <br>
         <button type="button" id="delete-button">Delete</button>
         </form>
+        </div> -->
+        <div class="modal-container" id="modal_container">
+          <div class="modal">
+            <input type="text" id="update-id" placeholder="ID" required>
+            <input type="text" id="update-image" placeholder="Image" required>
+            <input type="text" id="update-name" placeholder="Name" required>
+            <input type="text" id="update-description" placeholder="Description" required>
+            <input type="text" id="update-price" placeholder="Price" required>
+            <input type="text" id="update-offer-price"placeholder="offer price" required>
+            <input type="text" id="update-category"placeholder="Category" required>
+
+            <button id="submit">Update</button>
+            <button id="cancel">Cancel</button>
+          </div>
         </div>
-        
           </body>
         </html>
 <script src="./admin.js"></script>
->

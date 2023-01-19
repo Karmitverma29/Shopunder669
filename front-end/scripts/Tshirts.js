@@ -4,7 +4,7 @@ nav.innerHTML=Navbar();
 async function getdata(){
 
 
-    let res=await fetch(`https://energetic-pea-coat-dog.cyclic.app/product`);
+    let res=await fetch(`https://energetic-pea-coat-dog.cyclic.app/product/T-shirts`);
     let data=await res.json();
     console.log(data)
     renderData(data);
@@ -27,7 +27,7 @@ function renderData(data){
         let price=document.createElement("p");
         price.innerText=elem.price;
         let offer_price=document.createElement("p");
-        offer_price.innerText=elem.offerPrice;
+        offer_price.innerText=elem.offer_price;
         let btn=document.createElement("button");
         btn.innerText="Order Now";
         btn.addEventListener("click",()=>{
