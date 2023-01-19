@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-
+<!-- Next two lines are used for Header code -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./styles/Header.css">
 </head>
 <body>
+    <div id="Header"></div>
     <div id="nav"></div>
     <div id="shirts"></div>
     <div id="Footer"></div>
@@ -23,6 +26,11 @@
 
 <!-- This script is used for footer code -->
 <script type="module">
+
+import Header from '../Header.js'
+    let head = document.querySelector('#Header')
+    head.innerHTML =Header();
+
     import Footer from './Footer.js'
     let container = document.querySelector('#Footer')
        container.innerHTML =Footer();
