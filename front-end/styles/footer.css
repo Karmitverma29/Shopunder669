@@ -93,6 +93,9 @@ ul{
 } */
 
 @media screen and (max-width:500px) and (min-width:320px){
+	.container{
+		width: 100%;
+	}
 	.row{
 		display: grid;
 		grid-template-columns: repeat(4,1fr);

@@ -433,43 +433,47 @@ font-weight: 600;
      .banner{
       
         grid-template-columns: repeat(1,1fr);
-        width: 90%;
+        width: 100%;
         height: 600px;
+        margin: auto;
         
         }
         .banner>.text{
+          margin: auto;
             font-size: 18px;
           text-align: center;
-          margin-left: 4px;
+          /* margin-left: 4px; */
            
             }
-            .banner>.text>h1{
+            /* .banner>.text>h1{
             margin-left: 40px;
-            }
+            } */
             .banner .imagebanner img{
-                width: 95%;
-                margin-left: 40px;
+                width: 100%;
+                /* margin-left: 40px; */
             }
             .container{
+              margin: auto;
                 display: grid;
                 grid-template-columns: repeat(1,1fr);
-                width: 85%;
+                width: 100%;
             }
             .product-container .product-images img{
-                width: 80%;
+                width: 100%;
                 height: 350px;
             }
             .category-section{
                 width: 100%;
                 margin: auto;
-                margin-left: 10px;
+                /* margin-left: 10px; */
             }
             .category-section .category-container .category a img{
                 display: grid;
                 grid-template-columns: repeat(7,1fr);
-                gap: 20px;
-                width: 50px;
-                height: 50px;
+                gap: 10px;
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
                 
             }
             .category-section .category-container .category h3{
