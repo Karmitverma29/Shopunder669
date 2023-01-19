@@ -38,7 +38,7 @@ function renderData(data){
                 name:elem.name,
                 description:elem.description,
                 price:elem.price,
-                offer_price:elem.offerPrice
+                offer_price:elem.offer_price
             }
          
 
