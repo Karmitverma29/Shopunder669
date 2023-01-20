@@ -5,5 +5,5 @@ const UserSchema=mongoose.Schema({
     password:String,
     administration:Boolean
 });
-const UserModel=mongoose.model("BymeUser",UserSchema);
+const UserModel=mongoose.model("shop669user",UserSchema);
 module.exports=UserModel;
