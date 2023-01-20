@@ -1,0 +1,90 @@
+#couponformadd {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #ccc;
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, #F0F3F4, #ffffff);
+}
+
+#couponformadd h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#couponformadd input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+#couponformadd input:focus {
+    border: 1px solid #4CAF50;
+    outline: none;
+}
+
+#couponformadd button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#couponformadd button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+}
+#deletebox {
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#deletebox>p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#deletebox>button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#delete.box>button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+}

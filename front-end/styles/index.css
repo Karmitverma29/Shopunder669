@@ -430,6 +430,24 @@ font-weight: 600;
     }
   
 } */
+.category-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px; /* to keep it below the navbar */
+  background-color: black;
+}
+
+.category {
+  flex: 1;
+  text-align: center;
+}
+
+.category img {
+  max-width: 100%;
+}
+
 
 
 @media screen and (max-width:500px) and (min-width:320px){

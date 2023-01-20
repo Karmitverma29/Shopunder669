@@ -92,16 +92,16 @@
 // deleteButton.addEventListener("click", function () {
 //   const id = document.getElementById("delete-id").value;
 
-//   fetch(`https://energetic-pea-coat-dog.cyclic.app/delete/${id}`, {
-//     method: "DELETE",
-//   })
-//     .then((response) => response.json())
-//     .then((data) => {
-//       alert("Item deleted successfully");
-//     })
-//     .catch((error) => {
-//       alert("Error: " + error);
-//     });
+  // fetch(`https://energetic-pea-coat-dog.cyclic.app/delete/${id}`, {
+  //   method: "DELETE",
+  // })
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //     alert("Item deleted successfully");
+  //   })
+  //   .catch((error) => {
+  //     alert("Error: " + error);
+  //   });
 // });
 
 function Getdata(){

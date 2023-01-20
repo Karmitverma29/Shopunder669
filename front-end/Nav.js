@@ -1,7 +1,9 @@
 
 function Navbar(){
     return `
+    
     <div class="top">
+    
     <div class="search-container">
     <form>
       <input type="text" placeholder="Search..." id="search-input">
@@ -17,14 +19,14 @@ function Navbar(){
      </div>
     
 </div>
-    <div class="header">
-       
-    <a href="./index.html">  <h1 class="logoname">SHOPUNDER669</h1> </a>
- </div>
+   
  
      
  </div>
- 
+ <div class="header">
+       
+    <a href="./index.html">  <h1 class="logoname">SHOPUNDER669</h1> </a>
+ </div>
  `
 }
 
