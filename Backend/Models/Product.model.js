@@ -8,5 +8,5 @@ const ProductSchema=mongoose.Schema({
     price:Number,
     offer_price:Number
 });
-const ProductModel=mongoose.model("Bymeproduct",ProductSchema);
+const ProductModel=mongoose.model("shop669prod",ProductSchema);
 module.exports=ProductModel;

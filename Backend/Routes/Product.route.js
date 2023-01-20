@@ -4,7 +4,8 @@ const product=express.Router();
 product.use(express.json());
 
 product.get("/",async(req,res)=>{
-    res.send(await ProductModel.find());
+  let val=req.query.search;
+    res.send(await ProductModel.find({category:val}));
 });
 
 product.get("/:category",async(req,res)=>{
@@ -15,7 +16,7 @@ product.get("/:category",async(req,res)=>{
 
 product.get("/single/:id",async(req,res)=>{
   const ids=req.params.id;
-  const data=await ProductModel.findOne({product_id:ids});
+  const data=await ProductModel.findOne({id:ids});
   res.send(data);
 });
 
@@ -43,7 +44,7 @@ product.post("/create", async (req, res) => {
   product.patch("/update/:userID", async (req, res) => {
     try {
       const userID = req.params.userID;
-      await ProductModel.findByIdAndUpdate({_id:userID}, req.body);
+      await ProductModel.findOneAndUpdate({id:userID}, req.body);
       res.status(200).send({ msg: "Product Modified" });
     } catch (e) {
       console.log(e);
@@ -54,7 +55,7 @@ product.post("/create", async (req, res) => {
   product.delete("/delete/:userID", async (req, res) => {
       try {
         const userID = req.params.userID;
-        await ProductModel.findByIdAndDelete(userID);
+        await ProductModel.findOneAndDelete({id:userID})
         res.status(200).send({ msg: "Product deleted" });
       } catch (e) {
         console.log(e);
