@@ -7,7 +7,7 @@ function Header(){
             <input type='checkbox' id='check' />
             <span class="menu">
                 <li><a href="./">Home</a></li>
-                <li><a href="./cart.html">Cart</a></li>
+                <li><a href="./allproducts.html">All Product</a></li>
                 <li><a href="./">About</a></li>
                 <li><a href="./caps.html">Caps</a></li>
                 <li><a href="./books.html">Books</a></li>
