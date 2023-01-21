@@ -149,11 +149,15 @@ margin-right: 10px;
 height: 40px;
 width: 100px;
 background-color: #ffffff;
-border: 2px solid black;
 border-radius: 10px;
 font-weight: 600;
+font-size: larger;
+border: 1px solid white;
 
 cursor: pointer;
+   }
+   .cred>button:hover{
+    background-color: azure;
    }
    .cred>h2{
        margin-right: 10px;
