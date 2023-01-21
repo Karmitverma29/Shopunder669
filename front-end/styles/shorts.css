@@ -6,17 +6,15 @@
 
    }
    .header{
-       width: 100%;
-       background-color: #ffffff;
-   }
-   .header>a>h1{
-       text-align: center;
-       font-size: 48px;
-   }
-   .header>a{
-       text-decoration: none;
-       color: black;
-   }
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.header>a>img{
+    height:40px;
+}
    .navbar{
        height: 160px;
        width: 100%;

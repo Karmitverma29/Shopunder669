@@ -6,13 +6,16 @@
 
    }
    .header{
-       width: 100%;
-       background-color: #ffffff;
-   }
-   .header>a>h1{
-       text-align: center;
-       font-size: 48px;
-   }
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.header>a>img{
+    height:40px;
+}
+   
    .logoname{
     font-family:fantasy;
   }
@@ -24,10 +27,7 @@
     transition: 1s ease;
   }
   
-   .header>a{
-       text-decoration: none;
-       color: black;
-   }
+  
    .navbar{
        height: 160px;
        width: 100%;

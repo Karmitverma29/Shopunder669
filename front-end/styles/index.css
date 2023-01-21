@@ -56,15 +56,14 @@
    .header{
        width: 100%;
        background-color: #ffffff;
+       display: flex;
+       justify-content: center;
+       margin-top: 20px;
    }
-   .header>a>h1{
-       text-align: center;
-       font-size: 48px;
+   .header>a>img{
+       height:40px;
    }
-   .header>a{
-       text-decoration: none;
-       color: black;
-   }
+   
    .cred{
        display: flex;
        justify-content: center;
@@ -320,120 +319,7 @@ font-weight: 600;
     display: flex;
 }
 
-/* @media (max-width: 300px) {
-    .category {
-        width: calc(50% - 20px);
-    }
-  }
 
-@media (max-width: 500px) {
-    .category {
-        width: calc(100% - 20px);
-    }
-} */
-
-
-
-
-  
-  /* @media only screen and (min-width: 768px) {
-    .container {
-      display: flex;
-    }
-   
-  
-    .product-container:not(:last-child) {
-      margin-bottom: 0;
-      margin-right: 20px;
-    }
-  
-    .product-container .product-images img{
-      max-width: 50%;
-    }
- 
-
- 
-  } */
-  
-
-
-
-
-
-
-  /* @media screen and (max-width:500px) and (min-width:320px){
-    body{
-        width: auto;
-    }
-.banner{
-   grid-template-columns: repeat(1,1fr);
-   height: 600px;
-}
-.banner>.text{
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    
-    
-    }
-    .banner>.text>h1{
-    text-align: center;
-    }
-#banner2{
-   grid-template-columns: repeat(1,1fr);
-}
-#banner2>.texts{
-    font-size: 18px;
-    
-    }
-    #banner2>.texts>h1{
-    text-align: center;
-    }
-    
-.header>a>h1{
-   font-size: 28px;
-   margin-top: 4px;
-}
-.categories>a>div>img{
-   height: 55px;
-   width: 50px;
-   margin-left: 5px;
-}
-
-.categories>a>div{
-    padding: 5px;
-    cursor: pointer;
-
-}
-.categories>a>div>h2{
-    font-size: 10px;
-    font-weight: 700;
-    margin-right:5px;
-    margin-top: 10px;
-}
-.cred>a>h2{
-   font-size: 18px;
-
-}
-.cred>button{
-    margin-right: 4px;
-    margin-bottom: 10px;
-    
-    }
-    .container{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .product-container .product-images img{
-        width: 90%;
-    }
-    .category {
-        width: calc(50% - 20px);
-    }
-  
-} */
 .category-top {
   display: flex;
   justify-content: space-between;
@@ -523,5 +409,19 @@ font-weight: 600;
     #banner2>.texts>h1{
     text-align: center;
     }
+#search-input{
+  width: 70%;
+
+
+}
+#search-btn{
+  width: auto;
+  font-size: small;
+  border: none;
+}
+.cred>button{
+  width: auto;
+  font-size: small;
+}
 
 }
