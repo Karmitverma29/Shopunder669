@@ -8,6 +8,7 @@ body {
   --color1: #FFF ;
   --color2: #181818 ;
 }
+
 .nav-bar {
   width: 100%;
   display: flex;
