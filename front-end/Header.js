@@ -16,6 +16,7 @@ function Header(){
                 <li><a href="./shorts.html">Shorts</a></li>
                 <li><a href="./pants.html">Sweatshirts</a></li>
                 <li><a href="./hoodies.html">Nightwear</a></li>
+
                 <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
             </span>
             <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
