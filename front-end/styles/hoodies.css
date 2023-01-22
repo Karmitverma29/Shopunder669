@@ -152,13 +152,16 @@ font-size: larger;
 border: 1px solid white;
 cursor: pointer;
    }
-   .cred>button:hover{
+   .cred>button a:hover{
     background-color: azure;
    }
    .cred>h2{
        margin-right: 10px;
 cursor: pointer;
 
+   }
+   .cred>button>a{
+    color: black;
    }
    .cred>a>img{
     height: 20px;

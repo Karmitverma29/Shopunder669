@@ -92,7 +92,7 @@ font-size: larger;
 border: 1px solid white;
 cursor: pointer;
    }
-   .cred>button:hover{
+   .cred>button a:hover{
     background-color: azure;
    }
    .logoname{
@@ -116,6 +116,9 @@ cursor: pointer;
     width: 20px;
     cursor: pointer;
   }
+  .cred>button>a{
+    color: black;
+   }
    @media screen and (max-width:700px){
     body{
         width: auto;

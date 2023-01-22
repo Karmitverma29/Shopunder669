@@ -119,6 +119,7 @@
     margin-top: 20px;
     cursor: pointer;
 }
+
 #caps >div>button:hover {
     background-color: white;
     color: black;

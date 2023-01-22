@@ -73,19 +73,24 @@
        width: 20%;
        margin: auto;
        margin-top: 15px;
+       background-color: #ffffff;
+       border: none;
    }
    .cred>button{
 margin-right: 10px;
 height: 40px;
 width: 100px;
 background-color: #ffffff;
-border: 2px solid white;
+border:none;
 border-radius: 10px;
 cursor: pointer;
 font-weight: 600;
 font-size: larger;
    }
-   .cred>button:hover{
+   .cred>button>a{
+    color: black;
+   }
+   .cred>button> a:hover{
     background-color: azure;
    }
    .cred>h2{
