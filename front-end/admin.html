@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD Example</title>
+    <link rel="stylesheet" type="text/css" href="./styles/admin.css" />
+  </head>
+  <body>
+    <div
+      class="navofadmin"
+      style="
+        display: flex;
+        justify-items: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+      "
+    >
+      <h2
+        id="all"
+        style="margin-right: 20px; margin-left: 10px; cursor: pointer"
+      >
+        Manage Products
+      </h2>
+
+      <h2 style="cursor: pointer" id="add">Add Products</h2>
+      <a style="text-decoration: none" href="./coupon.html">
+        <h2
+          style="
+            cursor: pointer;
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+          "
+          id="add"
+        >
+          Manage Coupon
+        </h2></a
+      >
+    </div>
+
+    <div style="width: 100%" id="container"></div>
+
+    <div class="modal-container" id="modal_container">
+      <div class="modal">
+        <div>
+          <input type="text" id="update-image" placeholder="Image" required />
+          <input type="text" id="update-name" placeholder="Name" required />
+          <input
+            type="text"
+            id="update-description"
+            placeholder="Description"
+            required
+          />
+          <input type="text" id="update-price" placeholder="Price" required />
+          <input
+            type="text"
+            id="update-offer-price"
+            placeholder="offer price"
+            required
+          />
+          <input
+            type="text"
+            id="update-category"
+            placeholder="Category"
+            required
+          />
+        </div>
+        <button id="submit">Update</button>
+        <button id="cancel">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/admin.js"></script>

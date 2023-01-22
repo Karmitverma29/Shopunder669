@@ -20,7 +20,7 @@ document.getElementById("all").addEventListener("click",()=>{
 Getdata();
 
 })
-
+let editID="";
 function Display(data){
   let container=document.getElementById("container");
 container.innerHTML=null;
@@ -48,7 +48,7 @@ container.innerHTML=null;
     edit.setAttribute("id","open")
     edit.addEventListener("click",()=>{
       modal.classList.add("show");
-
+      editID=elem._id;
     })
     let Delete=document.createElement("button");
     Delete.innerText="DELETE";
@@ -70,32 +70,13 @@ container.innerHTML=null;
 
     div.append(div_img,name,desc,price,offer_price,edit,Delete);
     container.append(div);
-    const open = document.getElementById("open");
     const modal = document.getElementById("modal_container");
     const cancel=document.getElementById("cancel");
-    const submit = document.getElementById("submit");
-    function student(n, e, p, g) {
-      this.name = n;
-      this.email = e;
-      this.password = p;
-      this.gender = g;
-    }
    
     cancel.addEventListener("click", () => {
       
       modal.classList.remove("show");
     });
-    let allData = JSON.parse(localStorage.getItem("student")) || [];
-    // submit.addEventListener("click", () => {
-    //   const name = document.getElementById("name").value;
-    //   const email = document.getElementById("email").value;
-    //   const password = document.getElementById("password").value;
-    //   const gender = document.getElementById("gender").value;
-    //   const studentArray = new student(name, email, password, gender);
-    //   allData.push(studentArray);
-    //   localStorage.setItem("student", JSON.stringify(allData));
-    //   modal.classList.remove("show");
-    // });
 })
 
 }
@@ -163,8 +144,6 @@ else{
 })
 
 document.getElementById("submit").addEventListener("click",()=>{
-
-  const id = document.getElementById("update-id").value;
   const image = document.getElementById("update-image").value;
   const name = document.getElementById("update-name").value;
   const description = document.getElementById("update-description").value;
@@ -187,7 +166,7 @@ document.getElementById("submit").addEventListener("click",()=>{
   if (offerPrice != "") {
     item.offerPrice = offerPrice;
   }
-  fetch(`https://energetic-pea-coat-dog.cyclic.app/product/update/${id}`, {
+  fetch(`https://energetic-pea-coat-dog.cyclic.app/product/update/${editID}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -209,5 +188,4 @@ document.getElementById("submit").addEventListener("click",()=>{
       console.error("Error:", error);
       alert("Error updating item");
     });
-console.log(item)
 })

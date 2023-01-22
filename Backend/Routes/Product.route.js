@@ -44,7 +44,7 @@ product.post("/create", async (req, res) => {
   product.patch("/update/:userID", async (req, res) => {
     try {
       const userID = req.params.userID;
-      await ProductModel.findOneAndUpdate({id:userID}, req.body);
+      await ProductModel.findByIdAndUpdate(userID,req.body);
       res.status(200).send({ msg: "Product Modified" });
     } catch (e) {
       console.log(e);
