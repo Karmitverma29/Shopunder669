@@ -155,6 +155,8 @@ container.innerHTML=null;
     })
     let Delete=document.createElement("button");
     Delete.innerText="DELETE";
+    Delete.setAttribute("id","delbtn")
+
     Delete.addEventListener("click",()=>{
       fetch(`https://energetic-pea-coat-dog.cyclic.app/product/delete/${elem.id}`, {
         method: "DELETE",
@@ -216,6 +218,7 @@ addprod.forEach((el,id)=>{
 
   let input=document.createElement("input");
   input.setAttribute("id",el);
+  input.setAttribute("id","addinput")
   input.setAttribute("placeholder",ph[id]);
 
   container.append(input);

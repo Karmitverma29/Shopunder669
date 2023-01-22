@@ -116,6 +116,95 @@ input,select{
   padding: 10px 0px;
   text-indent: 10px;
 }
+#Single_product {
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+#Single_product:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+#open {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  box-shadow: 2px 2px 4px #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+#open:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 8px #000000;
+}
+
+#delbtn {
+  background-color: #ff0000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  box-shadow: 2px 2px 4px #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+#delbtn:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 8px #000000;
+}
+.navofadmin {
+  /* other styles */
+  transition: background-color 0.3s ease;
+}
+
+.navofadmin:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+@keyframes menu-item-animation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
  #container{
   grid-template-columns: repeat(2,1fr);
