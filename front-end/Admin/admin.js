@@ -106,7 +106,7 @@
 
 function Getdata(){
   let manageProd=[];
-  fetch("https://energetic-pea-coat-dog.cyclic.app/product", {
+  fetch("https://energetic-pea-coat-dog.cyclic.app/product/all", {
     method: "GET"
     })
     .then((response) => response.json())
@@ -151,6 +151,7 @@ container.innerHTML=null;
     edit.innerText="EDIT";
     edit.setAttribute("id","open")
     edit.addEventListener("click",()=>{
+      modal.classList.add("show");
 
     })
     let Delete=document.createElement("button");
@@ -183,10 +184,7 @@ container.innerHTML=null;
       this.password = p;
       this.gender = g;
     }
-    open.addEventListener("click", () => {
-      
-      modal.classList.add("show");
-    });
+   
     cancel.addEventListener("click", () => {
       
       modal.classList.remove("show");
@@ -218,7 +216,6 @@ addprod.forEach((el,id)=>{
 
   let input=document.createElement("input");
   input.setAttribute("id",el);
-  input.setAttribute("id","addinput")
   input.setAttribute("placeholder",ph[id]);
 
   container.append(input);
@@ -241,6 +238,7 @@ document.getElementById("add_prod").addEventListener("click",()=>{
       alert("Error: " + error);
     });
   const image = document.getElementById("create-image").value;
+  console.log(image)
   const name = document.getElementById("create-name").value;
   const description = document.getElementById("create-description").value;
   const price = document.getElementById("create-price").value;

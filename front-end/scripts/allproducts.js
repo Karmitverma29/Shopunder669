@@ -11,7 +11,7 @@ import Header from '../Header.js';
 async function getdata(){
 
 
-    let res=await fetch(`https://energetic-pea-coat-dog.cyclic.app/product`);
+    let res=await fetch(`https://energetic-pea-coat-dog.cyclic.app/product/all`);
     let data=await res.json();
     console.log(data)
     renderData(data);
