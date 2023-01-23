@@ -72,3 +72,35 @@
     </script>
  </body>
 </html>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+    import {
+    onAuthStateChanged,
+    signOut,
+    GoogleAuthProvider,
+    signInWithPopup,
+    FacebookAuthProvider,
+    RecaptchaVerifier,
+    signInWithPhoneNumber,
+    getAuth
+  } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
+    const firebaseConfig = {
+    apiKey: "AIzaSyBcSRk1li7bGtE0hLu3jM7-tI2WYphcck0",
+    authDomain: "mytv-e1b89.firebaseapp.com",
+    projectId: "mytv-e1b89",
+    storageBucket: "mytv-e1b89.appspot.com",
+    messagingSenderId: "6861621605",
+    appId: "1:6861621605:web:0ed390d1b02e23d625398c",
+    measurementId: "G-HKH8VHWXZH"
+  };
+  const app = initializeApp(firebaseConfig);
+  export const auth = getAuth(app);
+    const gLogin=()=>{
+      const googleAuthProvider = new GoogleAuthProvider();
+      signInWithPopup(auth, googleAuthProvider).then((r) => console.log(r.user.photoURL,r.user.displayName,r.user.email));
+    }
+    document.querySelector(".media-options").addEventListener("click",()=>{
+        gLogin();
+    })
+  </script>
