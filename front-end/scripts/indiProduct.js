@@ -1,4 +1,16 @@
 // Access the product data from the query string
+import Navbar from "../Nav.js";
+import Header from '../Header.js';
+
+let nav=document.getElementById("nav");
+nav.innerHTML=Navbar();
+
+    let head = document.querySelector('#Header')
+    head.innerHTML =Header();
+
+    import Footer from '../Footer.js'
+    let container = document.querySelector('#Footer')
+       container.innerHTML =Footer();
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
@@ -11,6 +23,7 @@ async function getProductDetails() {
 
     // Display the product details on the page
 
+    let div=document.createElement("div");
     let productImage = document.getElementById("product-image");
     productImage.src = data.image;
     let name = document.getElementById("product-name");
@@ -19,7 +32,7 @@ async function getProductDetails() {
     productPrice.innerText = "Price:"+" "+data.price;
     let productDesc = document.getElementById("product-desc");
     let Offerprice = document.getElementById("offer-price");
-    Offerprice.innerText = "Offer Price:"+" "+data.offerPrice;
+    Offerprice.innerText = "Offer Price:"+" "+data.offer_price;
 
     productDesc.innerText = data.description;
     let btn=document.getElementById("add-btn");
@@ -30,7 +43,7 @@ async function getProductDetails() {
             name:data.name,
             description:data.description,
             price:data.price,
-            offer_price:data.offerPrice
+            offer_price:data.offer_price
         }
         let token="shop669 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2M2NhM2JhNWRkNzEwNmNmM2YzNDBlYzgiLCJpYXQiOjE2NzQxOTc5NDJ9.tQPl_MmWwZPY-x_cD2L_j4dyMSNwx4r57YgGa7HfS7g"
         fetch("https://energetic-pea-coat-dog.cyclic.app/cart/create", {

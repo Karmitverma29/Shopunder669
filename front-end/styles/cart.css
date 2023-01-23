@@ -313,14 +313,21 @@ label[for="coupon-code"] {
     color: #333;
     margin-top: 10px;
   }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 768px) {
     #cart_page{
         grid-template-columns: repeat(2,1fr);
     }
+    #cart_page>div{
+        height: auto;
+        width: auto;
+    }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 400px) {
     #cart_page{
         grid-template-columns: repeat(1,1fr);
+    }
+    #cart_page>div{
+        height: auto;
         width: auto;
     }
 }
