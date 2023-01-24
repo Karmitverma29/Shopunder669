@@ -8,6 +8,10 @@ product.get("/",async(req,res)=>{
     res.send(await ProductModel.find({category:val}));
 });
 
+product.get("/all",async(req,res)=>{
+    res.send(await ProductModel.find());
+});
+
 product.get("/:category",async(req,res)=>{
   const ids=req.params.category;
   const data=await ProductModel.find({category:ids});
@@ -16,7 +20,7 @@ product.get("/:category",async(req,res)=>{
 
 product.get("/single/:id",async(req,res)=>{
   const ids=req.params.id;
-  const data=await ProductModel.findOne({id:ids});
+  const data=await ProductModel.findOne({_id:ids});
   res.send(data);
 });
 
@@ -51,7 +55,17 @@ product.post("/create", async (req, res) => {
       res.status(400).send({ msg: "Not Found" });
     }
   });
-  
+  product.patch("/review/:userID", async (req, res) => {
+    try {
+      const userID = req.params.userID;
+      pyld=req.body.rv;
+      await ProductModel.findByIdAndUpdate(userID,pyld);
+      res.status(200).send({ msg: "Review Modified" });
+    } catch (e) {
+      console.log(e);
+      res.status(400).send({ msg: "Not Found" });
+    }
+  });
   product.delete("/delete/:userID", async (req, res) => {
       try {
         const userID = req.params.userID;

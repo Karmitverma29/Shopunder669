@@ -48,7 +48,6 @@ function renderData(data){
                 price:elem.price,
                 offer_price:elem.offer_price
             }
-            let token="shop669 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2M2NhM2JhNWRkNzEwNmNmM2YzNDBlYzgiLCJpYXQiOjE2NzQxOTc5NDJ9.tQPl_MmWwZPY-x_cD2L_j4dyMSNwx4r57YgGa7HfS7g"
             fetch("https://energetic-pea-coat-dog.cyclic.app/cart/create", {
     method: "POST",
     headers: { "Content-Type": "application/json","authorization":token},
@@ -65,9 +64,9 @@ function renderData(data){
 
 
         })
-        img.addEventListener("click", () => {
+        div.addEventListener("click", () => {
           
-            window.location.href = `indiProduct.html?id=${elem.id}`;
+            window.location.href = `indiProduct.html?id=${elem._id}`;
         });
         div.append(img,name,desc,price,offer_price,btn);
         container.append(div);
