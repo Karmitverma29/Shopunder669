@@ -335,12 +335,26 @@ label[for="coupon-code"] {
 
   @media only screen and (max-width: 768px) {
     #cart_page{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     #cart_page>div{
         height: auto;
         width: auto;
     }
+    #search-input{
+        width: 70%;
+      
+      
+      }
+      #search-btn{
+        width: auto;
+        font-size: small;
+        border: none;
+      }
+      .cred>button{
+        width: auto;
+        font-size: small;
+      }
 }
 @media only screen and (max-width: 400px) {
     #cart_page{
@@ -350,4 +364,18 @@ label[for="coupon-code"] {
         height: auto;
         width: auto;
     }
+    #search-input{
+        width: 70%;
+      
+      
+      }
+      #search-btn{
+        width: auto;
+        font-size: small;
+        border: none;
+      }
+      .cred>button{
+        width: auto;
+        font-size: small;
+      }
 }
