@@ -67,7 +67,7 @@
 
 /* Style the add button */
 #add-btn {
-  background-color: #ffa500;
+  background-color: black;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -79,8 +79,9 @@
 
 /* Add a hover effect to the add button */
 #add-btn:hover {
-  background-color: #ff8c00;
+  background-color: #fff;
   cursor: pointer;
+  color: black;
 }
 
 .cred{
@@ -166,6 +167,90 @@ font-weight: 600;
 .header>a>img{
     height:40px;
 }
+.product-reviews {
+  margin-top: 50px;
+}
+
+.product-reviews h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.review-form {
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.review-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.review-form select, .review-form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.review-form textarea {
+  min-height: 120px;
+}
+
+.review-form button {
+  width: 100%;
+  background-color: black; /* Green */
+  color: white;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background-color: #fff;
+  color: black;
+  border: 2px solid black;
+}
+
+.review-list {
+  margin-top: 30px;
+}
+
+.review {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.review .review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review .review-author {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.review .review-rating i {
+  color: #ffc107; /* Yellow */
+}
+
+
     </style>
     
     <!-- Next two lines are used for Footer code -->
@@ -206,6 +291,29 @@ font-weight: 600;
             </div>
         </div>
     </div>
+    <div class="product-reviews">
+      <h2>Product Reviews</h2>
+      <div class="review-form">
+        <h3>Write a review</h3>
+        <form>
+          <label for="rating">Rating:</label>
+          <select id="rating" name="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label for="review-text">Review:</label>
+          <textarea id="review-text" name="review-text"></textarea>
+          <button type="submit" id="submit-review">Submit review</button>
+        </form>
+      </div>
+      <div class="review-list">
+        <!-- Reviews will be added here dynamically via JavaScript -->
+      </div>
+    </div>
+    
     <div id="Footer"></div>
 </body>
 </html>

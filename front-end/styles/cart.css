@@ -313,6 +313,26 @@ label[for="coupon-code"] {
     color: #333;
     margin-top: 10px;
   }
+  .checkout {
+    background-color: black; /* Black */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.checkout:hover {
+    background-color: #333; /* Darker black */
+    color: #fff; /* White */
+    box-shadow: 0 0 10px #fff; /* White shadow */
+}
+
   @media only screen and (max-width: 768px) {
     #cart_page{
         grid-template-columns: repeat(2,1fr);
