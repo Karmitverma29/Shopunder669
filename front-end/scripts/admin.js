@@ -55,7 +55,7 @@ container.innerHTML=null;
     Delete.setAttribute("id","delbtn")
 
     Delete.addEventListener("click",()=>{
-      fetch(`https://energetic-pea-coat-dog.cyclic.app/product/delete/${elem.id}`, {
+      fetch(`https://energetic-pea-coat-dog.cyclic.app/product/all/delete/${elem._id}`, {
         method: "DELETE",
       })
         .then((response) => response.json())
@@ -104,7 +104,7 @@ addProduct.setAttribute("id","add_prod");
 container.append(addProduct);
 document.getElementById("add_prod").addEventListener("click",()=>{
   let productData=[];
-  fetch("https://energetic-pea-coat-dog.cyclic.app/product", {
+  fetch("https://energetic-pea-coat-dog.cyclic.app/product/all", {
     method: "GET"
     })
     .then((response) => response.json())
@@ -122,7 +122,7 @@ document.getElementById("add_prod").addEventListener("click",()=>{
   const category=document.getElementById("create-category").value;
   const offer_price = document.getElementById("create-offer-price").value;
 if(image!==""&&name!==""&&description!==""&&price!==""&&category!==""&&offer_price!==""){
-  fetch("https://energetic-pea-coat-dog.cyclic.app/product/create", {
+  fetch("https://energetic-pea-coat-dog.cyclic.app/product/all/create", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ id:productData.length+1, image, name, description, price, offer_price,category }),
