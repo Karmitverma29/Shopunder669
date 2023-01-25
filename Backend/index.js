@@ -20,7 +20,6 @@ app.use(cors({
 }));
 app.use("/user",user);
 app.get("/",(req,res)=>{
-res.send("Backend is deployed")
 })
 app.post("/signup", async (req, res) => {
     try {
