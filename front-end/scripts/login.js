@@ -27,7 +27,12 @@ pwShowHide.forEach((eyeIcon) => {
     });
   });
 });
-
+const setCookie=(cname, cvalue, exdays)=> {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 document.getElementById("handleLogin").addEventListener("click", async () => {
   const email = document.getElementById("email").value;
   const pass = document.getElementById("pass").value;
@@ -57,6 +62,7 @@ document.getElementById("handleLogin").addEventListener("click", async () => {
           }, 3500);
         } else {
           toast(`Welcome ${res.displayName}`);
+          setCookie("shopToken",`br ${res.token}`,30)
           setTimeout(() => {
             window.location.href = "./index.html";
           }, 3500);

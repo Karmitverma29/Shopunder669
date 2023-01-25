@@ -33,11 +33,21 @@
           <header>Login</header>
           <form action="#">
             <div class="field input-field">
-              <input id="email" type="email" placeholder="Email" class="input" />
+              <input
+                id="email"
+                type="email"
+                placeholder="Email"
+                class="input"
+              />
             </div>
 
             <div class="field input-field">
-              <input id="pass" type="password" placeholder="Password" class="password" />
+              <input
+                id="pass"
+                type="password"
+                placeholder="Password"
+                class="password"
+              />
               <i class="bx bx-hide eye-icon"></i>
             </div>
 
@@ -80,31 +90,89 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
   import {
-  onAuthStateChanged,
-  signOut,
-  GoogleAuthProvider,
-  signInWithPopup,
-  FacebookAuthProvider,
-  RecaptchaVerifier,
-  signInWithPhoneNumber,
-  getAuth
-} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
+    onAuthStateChanged,
+    signOut,
+    GoogleAuthProvider,
+    signInWithPopup,
+    FacebookAuthProvider,
+    RecaptchaVerifier,
+    signInWithPhoneNumber,
+    getAuth,
+  } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
   const firebaseConfig = {
-  apiKey: "AIzaSyBcSRk1li7bGtE0hLu3jM7-tI2WYphcck0",
-  authDomain: "mytv-e1b89.firebaseapp.com",
-  projectId: "mytv-e1b89",
-  storageBucket: "mytv-e1b89.appspot.com",
-  messagingSenderId: "6861621605",
-  appId: "1:6861621605:web:0ed390d1b02e23d625398c",
-  measurementId: "G-HKH8VHWXZH"
-};
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-  const gLogin=()=>{
-    const googleAuthProvider = new GoogleAuthProvider();
-    signInWithPopup(auth, googleAuthProvider).then((r) => console.log(r.user.photoURL,r.user.displayName,r.user.email));
+    apiKey: "AIzaSyBcSRk1li7bGtE0hLu3jM7-tI2WYphcck0",
+    authDomain: "mytv-e1b89.firebaseapp.com",
+    projectId: "mytv-e1b89",
+    storageBucket: "mytv-e1b89.appspot.com",
+    messagingSenderId: "6861621605",
+    appId: "1:6861621605:web:0ed390d1b02e23d625398c",
+    measurementId: "G-HKH8VHWXZH",
+  };
+  const app = initializeApp(firebaseConfig);
+  export const auth = getAuth(app);
+  const setCookie=(cname, cvalue, exdays)=> {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
-  document.querySelector(".media-options").addEventListener("click",()=>{
-        gLogin();
-    })
+  const gLogin = () => {
+    const googleAuthProvider = new GoogleAuthProvider();
+    signInWithPopup(auth, googleAuthProvider).then(async (r) => {
+      let payload = {
+        name: r.user.displayName,
+        email: r.user.email,
+        password: "BA7DnNtgfRYmxc2a",
+        administration: false,
+      };
+      await fetch("https://energetic-pea-coat-dog.cyclic.app/signup", {
+        method: "POST",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then(async () => {
+          let payload = {
+            email: r.user.email,
+            password: "BA7DnNtgfRYmxc2a",
+          };
+          try {
+            const login = await fetch(
+              "https://energetic-pea-coat-dog.cyclic.app/login",
+              {
+                method: "POST",
+                body: JSON.stringify(payload),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+            const res = await login.json();
+
+            if (res.administration) {
+              toast("Welcome to admin");
+              setTimeout(() => {
+                window.location.href = "./admin.html";
+              }, 3500);
+            } else {
+              toast(`Welcome ${res.displayName}`);
+              setCookie("shopToken",`br ${res.token}`,30)
+              setTimeout(() => {
+                window.location.href = "./index.html";
+              }, 3500);
+            }
+          } catch (error) {
+            toast("Wrong E-mail / Password", "red");
+          }
+        })
+        .catch((e) => {
+          toast("Something went wrong !", "red");
+        });
+      // console.log(r.user.photoURL, r.user.displayName, r.user.email);
+    });
+  };
+  document.querySelector(".media-options").addEventListener("click", () => {
+    gLogin();
+  });
 </script>

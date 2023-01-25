@@ -1,81 +1,100 @@
+<!DOCTYPE html>
 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Signup</title>
 
- <!DOCTYPE html>
-
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title> Login and Signup </title>
-
-     <!-- CSS -->
-     <link rel="stylesheet" href="./styles/login.css">
-     <link rel="stylesheet" href="./styles/toast.css">      
-     <!-- Boxicons CSS -->
-     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'/>
-     <!-- Next two lines are used for Header code -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <link rel="stylesheet" href="./styles/Header.css">
-
-
- </head>
- <body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/toast.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Next two lines are used for Header code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/Header.css" />
+  </head>
+  <body>
     <div id="toast"></div>
-     <section class="container forms">
-         <div class="form login">
-             <div class="form-content">
-                 <header id="homedex">Signup</header>
-                 <form action="#">
-                     <div class="field input-field">
-                         <input id="name" type="text" placeholder="Name" class="input">
-                     </div>
-                        <div class="field input-field">
-                            <input id="email" type="email" placeholder="Email" class="input">
-                        </div>
-                     <div class="field input-field">
-                         <input id="pass" type="password" placeholder="Password" class="password">
-                         <i class='bx bx-hide eye-icon'></i>
-                     </div>
-                     <div class="field input-field">
-                        <input id="cpass" type="password" placeholder="Confirm Password" class="cpassword">
-                        <i class='bx bx-hide ceye-icon'></i>
-                    </div>
-                     <div class="field button-field">
-                         <button id="handleSignup">Signup</button>
-                     </div>
-                 </form>
+    <section class="container forms">
+      <div class="form login">
+        <div class="form-content">
+          <header id="homedex">Signup</header>
+          <form action="#">
+            <div class="field input-field">
+              <input id="name" type="text" placeholder="Name" class="input" />
+            </div>
+            <div class="field input-field">
+              <input
+                id="email"
+                type="email"
+                placeholder="Email"
+                class="input"
+              />
+            </div>
+            <div class="field input-field">
+              <input
+                id="pass"
+                type="password"
+                placeholder="Password"
+                class="password"
+              />
+              <i class="bx bx-hide eye-icon"></i>
+            </div>
+            <div class="field input-field">
+              <input
+                id="cpass"
+                type="password"
+                placeholder="Confirm Password"
+                class="cpassword"
+              />
+              <i class="bx bx-hide ceye-icon"></i>
+            </div>
+            <div class="field button-field">
+              <button id="handleSignup">Signup</button>
+            </div>
+          </form>
 
-                 <div class="form-link">
-                     <span>have an account? <a href="./login.html">Login</a></span>
-                 </div>
-             </div>
+          <div class="form-link">
+            <span>have an account? <a href="./login.html">Login</a></span>
+          </div>
+        </div>
 
-             <div class="line"></div>
+        <div class="line"></div>
 
-             <div class="media-options">
-                 <a href="#" class="field google">
-                     <img src="./images/google.png" alt="" class="google-img">
-                     <span>Login with Google</span>
-                 </a>
-             </div>
-         </div>         
-     </section>
-     
+        <div class="media-options">
+          <a href="#" class="field google">
+            <img src="./images/google.png" alt="" class="google-img" />
+            <span>Login with Google</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-     <!-- JavaScript -->
-     <script src="./scripts/signup.js"></script>
+    <!-- JavaScript -->
+    <script src="./scripts/signup.js"></script>
     <script type="module">
-     import Header from '../Header.js'
- let head = document.querySelector('#Header')
- head.innerHTML =Header();
+      import Header from "../Header.js";
+      let head = document.querySelector("#Header");
+      head.innerHTML = Header();
     </script>
- </body>
+  </body>
 </html>
 <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
-    import {
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+  import {
     onAuthStateChanged,
     signOut,
     GoogleAuthProvider,
@@ -83,24 +102,91 @@
     FacebookAuthProvider,
     RecaptchaVerifier,
     signInWithPhoneNumber,
-    getAuth
+    getAuth,
   } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
-    const firebaseConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyBcSRk1li7bGtE0hLu3jM7-tI2WYphcck0",
     authDomain: "mytv-e1b89.firebaseapp.com",
     projectId: "mytv-e1b89",
     storageBucket: "mytv-e1b89.appspot.com",
     messagingSenderId: "6861621605",
     appId: "1:6861621605:web:0ed390d1b02e23d625398c",
-    measurementId: "G-HKH8VHWXZH"
+    measurementId: "G-HKH8VHWXZH",
   };
   const app = initializeApp(firebaseConfig);
   export const auth = getAuth(app);
-    const gLogin=()=>{
-      const googleAuthProvider = new GoogleAuthProvider();
-      signInWithPopup(auth, googleAuthProvider).then((r) => console.log(r.user.photoURL,r.user.displayName,r.user.email));
-    }
-    document.querySelector(".media-options").addEventListener("click",()=>{
-        gLogin();
-    })
-  </script>
+  const setCookie = (cname, cvalue, exdays) => {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  };
+  const toast = (text, bgcolor = "green", textcolor = "white") => {
+    var x = document.getElementById("toast");
+    x.innerText = text;
+    x.style.backgroundColor = bgcolor;
+    x.style.color = textcolor;
+    x.className = "show";
+    setTimeout(function () {
+      x.className = x.className.replace("show", "");
+    }, 3000);
+  };
+  const gLogin = () => {
+    const googleAuthProvider = new GoogleAuthProvider();
+    signInWithPopup(auth, googleAuthProvider).then(async (r) => {
+      let payload = {
+        name: r.user.displayName,
+        email: r.user.email,
+        password: "BA7DnNtgfRYmxc2a",
+        administration: false,
+      };
+      await fetch("https://energetic-pea-coat-dog.cyclic.app/signup", {
+        method: "POST",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then(async () => {
+          let payload = {
+            email: r.user.email,
+            password: "BA7DnNtgfRYmxc2a",
+          };
+          try {
+            const login = await fetch(
+              "https://energetic-pea-coat-dog.cyclic.app/login",
+              {
+                method: "POST",
+                body: JSON.stringify(payload),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+            const res = await login.json();
+            if (res.administration) {
+              toast("Welcome to admin");
+              setTimeout(() => {
+                window.location.href = "./admin.html";
+              }, 3500);
+            } else {
+              toast(`Welcome ${res.displayName}`);
+              setCookie("shopToken", `br ${res.token}`, 30);
+              setTimeout(() => {
+                window.location.href = "./index.html";
+              }, 3500);
+            }
+          } catch (error) {
+            toast("Wrong E-mail / Password", "red");
+          }
+        })
+        .catch((e) => {
+          toast("Something went wrong !", "red");
+        });
+      console.log(r.user.photoURL, r.user.displayName, r.user.email);
+    });
+  };
+  document.querySelector(".media-options").addEventListener("click", () => {
+    gLogin();
+  });
+</script>
