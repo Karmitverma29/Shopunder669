@@ -12,7 +12,7 @@ body {
 .nav-bar {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style: none;
   position: relative;
