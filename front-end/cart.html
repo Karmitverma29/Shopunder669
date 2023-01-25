@@ -1,44 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/cart.css">
-    <link rel="stylesheet" href="./styles/Header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <link rel="stylesheet" href="./styles/Header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="header">
-       
-        <a href="./index.html">  <img src="./images/american-captain.png" alt="alt_img"/> </a>
-     </div>
+      <a href="./index.html">
+        <img src="./images/american-captain.png" alt="alt_img" />
+      </a>
+    </div>
     <div id="Header"></div>
     <div id="nav"></div>
     <div id="cart_page"></div>
 
-
     <div id="prod_sum">
-        <h1 id="summary">Product Summary</h1>
-        <h2 id="total-price" ></h2>
-        <button class="checkout">Checkout</button>
+      <h1 id="summary">Product Summary</h1>
+      <h2 id="total-price"></h2>
+      <button class="checkout">Checkout</button>
     </div>
     <label for="coupon-code">Coupon Code:</label>
     <select id="coupon-code">
       <option value="NOCODE" selected>Select a code</option>
-     
     </select>
     <div id="price-box">
-
-    <span id="discount"></span>
-    <span id="final-price"></span>
+      <span id="discount"></span>
+      <span id="final-price"></span>
     </div>
-    
+
     <div id="Footer"></div>
-</body>
+  </body>
 </html>
 <script type="module" src="./scripts/cart.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  const razorpay = () => {
+    let Pricee = document
+      .getElementById("total-price")
+      .innerHTML.split("₹");
+      let fPrice=Number(Pricee[1])*100;
+    var options = {
+      key: "rzp_test_sYtoH5zOp7BCJ8",
+      amount: fPrice,
+      currency: "INR",
+      description: "Acme Corp",
+      image: "https://s3.amazonaws.com/rzp-mobile/images/rzp.jpg",
+      config: {
+        display: {
+          blocks: {
+            hdfc: {
+              //name for HDFC block
+              name: "Pay using UPI",
+              instruments: [
+                {
+                  method: "upi",
+                },
+                {
+                  method: "netbanking",
+                  banks: ["HDFC"],
+                },
+              ],
+            },
+            other: {
+              //  name for other block
+              name: "Other Payment modes",
+              instruments: [
+                {
+                  method: "card",
+                  issuers: ["ICIC", "SBI", "HDFC"],
+                },
+                {
+                  method: "netbanking",
+                },
+              ],
+            },
+          },
+          hide: [
+            {
+              method: "upi",
+            },
+          ],
+          sequence: ["block.hdfc", "block.other"],
+          preferences: {
+            show_default_blocks: false, // Should Checkout show its default blocks?
+          },
+        },
+      },
+      handler: function (response) {
+        alert(response.razorpay_payment_id);
+      },
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+  };
+
+  document.querySelector(".checkout").onclick = function (e) {
+    razorpay();
+    e.preventDefault();
+  };
+</script>

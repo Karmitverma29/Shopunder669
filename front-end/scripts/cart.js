@@ -64,7 +64,7 @@ function renderData(data) {
         let id = elem._id;
         let totalPrice = document.getElementById("total-price");
         p = p + elem.offer_price;
-        totalPrice.innerText = "Total-price: " + p + "/-";
+        totalPrice.innerText = "Total-price: ₹" + p;
         delete_btn.addEventListener("click", () => {
           fetch(`https://energetic-pea-coat-dog.cyclic.app/cart/delete/${id}`, {
             method: "DELETE",
@@ -119,7 +119,7 @@ document.getElementById("coupon-code").addEventListener("change", () => {
     let cart_discount = (discount * p) / 100;
     let netprice = p - cart_discount;
     let totalPrice = document.getElementById("total-price");
-    totalPrice.innerText = "Final Price: " + netprice + "/-";
+    totalPrice.innerText = "Final Price: ₹" + netprice;
     finalDiscount.innerHTML = "Total discount:" + " " + cart_discount;
     finalprice.innerText = "Final Price:" + " " + netprice;
   } else {
