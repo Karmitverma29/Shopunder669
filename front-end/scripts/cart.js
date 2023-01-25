@@ -24,6 +24,10 @@ import Footer from "../Footer.js";
 let container = document.querySelector("#Footer");
 container.innerHTML = Footer();
 let token =getCookie("shopToken");
+if(token==""){
+  alert("Please login first");
+  window.location.href="./login.html";
+}
 async function getdata() {
   console.log(token)
   let res = await fetch(`https://energetic-pea-coat-dog.cyclic.app/cart`, {

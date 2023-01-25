@@ -18,7 +18,7 @@ function Getdata(){
 document.getElementById("all").addEventListener("click",()=>{
 
 Getdata();
-
+const cancel=document.getElementById("cancel");
 })
 let editID="";
 function Display(data){
@@ -55,7 +55,7 @@ container.innerHTML=null;
     Delete.setAttribute("id","delbtn")
 
     Delete.addEventListener("click",()=>{
-      fetch(`https://energetic-pea-coat-dog.cyclic.app/product/all/delete/${elem._id}`, {
+      fetch(`https://energetic-pea-coat-dog.cyclic.app/product/delete/${elem._id}`, {
         method: "DELETE",
       })
         .then((response) => response.json())
@@ -71,7 +71,7 @@ container.innerHTML=null;
     div.append(div_img,name,desc,price,offer_price,edit,Delete);
     container.append(div);
     const modal = document.getElementById("modal_container");
-    const cancel=document.getElementById("cancel");
+    
    
     cancel.addEventListener("click", () => {
       
@@ -120,12 +120,12 @@ document.getElementById("add_prod").addEventListener("click",()=>{
   const description = document.getElementById("create-description").value;
   const price = document.getElementById("create-price").value;
   const category=document.getElementById("create-category").value;
-  const offer_price = document.getElementById("create-offer-price").value;
-if(image!==""&&name!==""&&description!==""&&price!==""&&category!==""&&offer_price!==""){
-  fetch("https://energetic-pea-coat-dog.cyclic.app/product/all/create", {
+  const offerPrice = document.getElementById("create-offer-price").value;
+if(image!==""&&name!==""&&description!==""&&price!==""&&category!==""&&offerPrice!==""){
+  fetch("https://energetic-pea-coat-dog.cyclic.app/product/create", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ id:productData.length+1, image, name, description, price, offer_price,category }),
+    body: JSON.stringify({ id:productData.length+1, image, name, description, price, offerPrice,category }),
   })
     .then((response) => response.json())
     .then((data) => {
@@ -173,16 +173,11 @@ document.getElementById("submit").addEventListener("click",()=>{
     },
     body: JSON.stringify(item),
   })
-    .then((response) => {
-      if (response.ok) {
-        return response.json();
-      } else {
-        throw new Error("Error updating item");
-      }
-      console.log(response)
-    })
     .then((data) => {
+      document.getElementById("cancel").classList.remove("show");
       alert("Item updated successfully");
+      Getdata();
+      
     })
     .catch((error) => {
       console.error("Error:", error);

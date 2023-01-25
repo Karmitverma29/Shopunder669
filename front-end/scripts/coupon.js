@@ -85,3 +85,7 @@ document.getElementById("deleteCoupon").addEventListener("click", () => {
       alert("Error: " + error);
     });
 });
+
+document.getElementById("admin_dash").addEventListener("click",()=>{
+  window.location.href="./admin.html";
+});
