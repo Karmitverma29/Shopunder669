@@ -1,6 +1,5 @@
 import Navbar from "../Nav.js";
-// import Footer from '../Footer.js'
-// import Header from '../Header.js';
+
 import OutNavbar from "../logoutNav.js";
 function getCookie(cname) {
   let name = cname + "=";
