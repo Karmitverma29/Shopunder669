@@ -8,7 +8,9 @@
     transition: all 0.3s ease-in-out;
     background-image: linear-gradient(to bottom, #F0F3F4, #ffffff);
 }
-
+body{
+    margin: 0px;
+}
 #couponformadd h2 {
     text-align: center;
     font-size: 30px;

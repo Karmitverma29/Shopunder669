@@ -3,6 +3,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin: 0px;
 }
 
 #create-form, #read-form, #update-form, #delete-form {
