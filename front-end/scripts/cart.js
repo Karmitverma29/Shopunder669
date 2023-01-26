@@ -73,6 +73,7 @@ function renderData(data) {
             .then((response) => response.json())
             .then((data) => {
               alert("Item deleted successfully");
+              p=0;
               getdata();
             })
             .catch((error) => {
@@ -115,14 +116,25 @@ document.getElementById("coupon-code").addEventListener("change", () => {
     .map(Number);
   let finalDiscount = document.getElementById("discount");
   let finalprice = document.getElementById("final-price");
-  if (p >= minimumPurchase) {
+  if (p >= minimumPurchase && minimumPurchase!=undefined) {
     let cart_discount = (discount * p) / 100;
     let netprice = p - cart_discount;
     let totalPrice = document.getElementById("total-price");
     totalPrice.innerText = "Final Price: ₹" + netprice;
     finalDiscount.innerHTML = "Total discount:" + " " + cart_discount;
     finalprice.innerText = "Final Price:" + " " + netprice;
-  } else {
+  } else if(p < minimumPurchase && minimumPurchase!=undefined) {
     alert(`Your cart value must be more than ${minimumPurchase}`);
+    document.getElementById("coupon-code").value="";
+    let totalPrice = document.getElementById("total-price");
+    totalPrice.innerText = "Final Price: ₹" + p;
+    document.getElementById("discount").innerHTML="";
+    document.getElementById("final-price").innerHTML="";
+  }
+  else{
+    let totalPrice = document.getElementById("total-price");
+    totalPrice.innerText = "Final Price: ₹" + p;
+    document.getElementById("discount").innerHTML="";
+    document.getElementById("final-price").innerHTML="";
   }
 });
