@@ -1,15 +1,35 @@
 import Navbar from "../Nav.js";
-
-let nav = document.getElementById("nav");
-nav.innerHTML = Navbar();
 import Header from "../Header.js";
 
 let head = document.querySelector("#Header");
 head.innerHTML = Header();
 import Footer from "../Footer.js";
+import OutNavbar from "../logoutNav.js";
 let container = document.querySelector("#Footer");
 container.innerHTML = Footer();
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 let token =getCookie("shopToken");
+if (token == "") {
+  let nav = document.getElementById("nav");
+  nav.innerHTML = Navbar();
+} else {
+  let nav = document.getElementById("nav");
+  nav.innerHTML = OutNavbar();
+}
 if(token==""){
   alert("Please login first");
   window.location.href="./login.html";
