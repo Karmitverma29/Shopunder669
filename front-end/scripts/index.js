@@ -1,4 +1,5 @@
 import Navbar from "../Nav.js";
+import Footer from '../Footer.js'
 
 import OutNavbar from "../logoutNav.js";
 function getCookie(cname) {
@@ -33,8 +34,8 @@ if (token == "") {
 }
 // let head = document.getElementById('Header')
 // head.innerHTML =Header();
-// let container = document.getElementById('Footer')
-//    container.innerHTML =Footer();
+let container = document.getElementById('Footer')
+   container.innerHTML =Footer();
 let results = document.getElementById("search-results");
 document.getElementById("logout").addEventListener("click",()=>{
     setCookie("shopToken","",0);

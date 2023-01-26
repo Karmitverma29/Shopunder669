@@ -1,14 +1,12 @@
 // Access the product data from the query string
 import Navbar from "../Nav.js";
 import Header from "../Header.js";
-
-let nav = document.getElementById("nav");
-nav.innerHTML = Navbar();
-
+import Footer from "../Footer.js";
+import OutNavbar from "../logoutNav.js";
 let head = document.querySelector("#Header");
 head.innerHTML = Header();
 
-import Footer from "../Footer.js";
+
 let container = document.querySelector("#Footer");
 container.innerHTML = Footer();
 const queryString = window.location.search;
@@ -31,6 +29,13 @@ function getCookie(cname) {
   return "";
 }
 var token =getCookie("shopToken");
+if (token == "") {
+  let nav = document.getElementById("nav");
+  nav.innerHTML = Navbar();
+} else {
+  let nav = document.getElementById("nav");
+  nav.innerHTML = OutNavbar();
+}
 // Make a server request to get the product details
 async function getProductDetails() {
   let res = await fetch(
