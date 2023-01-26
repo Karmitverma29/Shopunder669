@@ -119,6 +119,12 @@
   const gLogin = () => {
     const googleAuthProvider = new GoogleAuthProvider();
     signInWithPopup(auth, googleAuthProvider).then(async (r) => {
+      var userload={
+        profile_img:r.user.photoURL,
+        email:r.user.email,
+        name:r.user.displayName
+      }
+      setCookie("shopUserData",JSON.stringify(userload),30);
       let payload = {
         name: r.user.displayName,
         email: r.user.email,
@@ -149,7 +155,6 @@
               }
             );
             const res = await login.json();
-
             if (res.administration) {
               toast("Welcome to admin");
               setTimeout(() => {

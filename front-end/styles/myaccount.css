@@ -3,7 +3,8 @@ body {
   }
   
   #profile-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
     justify-content: center;
     padding: 30px;
@@ -61,8 +62,28 @@ body {
     transition: all 0.3s ease-in-out;
   }
   
-  #logout-button:hover {
+  #logout-button:hover,#back-button:hover {
     background: #da190b;
   }
   
-  
+  #back-button{
+    background: #f44336;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    position: relative;
+    top: 20px;
+    right: 19px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  @media screen and (max-width:500px) and (min-width:120px) {
+    #profile-section{
+      grid-template-columns: repeat(1,1fr);
+    }
+    #profile-picture ,#profile-info{
+      margin: auto;
+    }
+  }
