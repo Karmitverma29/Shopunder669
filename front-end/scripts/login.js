@@ -54,13 +54,18 @@ document.getElementById("handleLogin").addEventListener("click", async () => {
           }
         );
         const res = await login.json();
-
         if (res.administration) {
           toast("Welcome to admin");
           setTimeout(() => {
             window.location.href = "./admin.html";
           }, 3500);
         } else {
+          var userload={
+            profile_img:"",
+            email:email,
+            name:res.displayName
+          }
+          setCookie("shopUserData",JSON.stringify(userload),30);
           toast(`Welcome ${res.displayName}`);
           setCookie("shopToken",`br ${res.token}`,30)
           setTimeout(() => {
