@@ -9,6 +9,21 @@ head.innerHTML = Header();
 import Footer from "../Footer.js";
 let container = document.querySelector("#Footer");
 container.innerHTML = Footer();
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(";");
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 let token =getCookie("shopToken");
 if(token==""){
   alert("Please login first");
