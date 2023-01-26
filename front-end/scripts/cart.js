@@ -66,6 +66,8 @@ function renderData(data) {
         let offer_price = document.createElement("p");
         offer_price.innerText = "Offer price:" + " " + elem.offer_price;
         let delete_btn = document.createElement("button");
+        offer_price.setAttribute("class",'discount');
+        price.setAttribute("class",'price');
         delete_btn.innerText = "REMOVE";
         let id = elem._id;
         let totalPrice = document.getElementById("total-price");

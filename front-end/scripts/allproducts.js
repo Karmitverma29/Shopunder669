@@ -62,9 +62,11 @@ function renderData(data) {
     let desc = document.createElement("p");
     desc.innerText = elem.description;
     let price = document.createElement("p");
-    price.innerText = "Price" + ":" + elem.price;
+    price.innerText = "Price" + ":" + " ₹"+ elem.price;
+    price.setAttribute("class",'price');
     let offer_price = document.createElement("p");
-    offer_price.innerText = "Offer price" + ":" + elem.offerPrice;
+    offer_price.innerText = "Offer price" + ":"+ " ₹" + elem.offerPrice;
+    offer_price.setAttribute("class",'discount')
     let btn = document.createElement("button");
     btn.innerText = "Add to cart";
     btn.addEventListener("click", () => {

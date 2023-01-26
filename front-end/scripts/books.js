@@ -65,8 +65,11 @@ function renderData(data){
         desc.innerText=elem.description;
         let price=document.createElement("p");
         price.innerText=elem.price;
+        price.setAttribute("class",'price');
+
         let offer_price=document.createElement("p");
         offer_price.innerText=elem.offer_price;
+        offer_price.setAttribute("class",'discount');
         let btn=document.createElement("button");
         btn.innerText="Add to cart";
         btn.addEventListener("click",()=>{

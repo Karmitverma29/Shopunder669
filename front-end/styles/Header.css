@@ -4,9 +4,10 @@
   padding: 0;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "futura-pt", sans-serif;
   --color1: #FFF ;
   --color2: #181818 ;
+  font-weight: 900;
 }
 
 .nav-bar {
