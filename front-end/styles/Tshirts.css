@@ -289,6 +289,20 @@ i.fa-user-circle {
         height: auto;
         width: auto;
     }
+    #search-input{
+        width: 70%;
+      
+      
+      }
+      #search-btn{
+        width: auto;
+        font-size: small;
+        border: none;
+      }
+      .cred>button{
+        width: auto;
+        font-size: small;
+      }
 }
 @media only screen and (max-width: 400px) {
     #shirts{
