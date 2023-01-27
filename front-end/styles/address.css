@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+column-gap: 30px;
+}
+.main_head{
+    width: 30%;
+    max-height: 100vh;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.B_head{
+    margin-top: 40px;
+    text-align: center;
+}
+form{
+    width: 80%;
+    max-height: 100vh;
+    /* border: 1px solid blue; */
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+form p{
+    font-size: 18px;
+    padding: 3px;
+    font-weight: bold;
+}
+input{
+    outline: none;
+
+    border: 1px solid#CACACA;
+    padding: 9px 29px;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+#state{
+    width: 100%;
+    padding: 9px;
+    outline: none;
+    border: 1px solid#CACACA;
+    border-radius: 6px;
+}
+#submit{
+    margin-top: 20px;
+    padding: 16px;
+    width: 100%;
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+#submit:hover{
+    box-shadow: #8b80f9 0px 0px 12px 1px inset,#8b80f9 0px 0px 12px 1px;
+}
+@media screen and (max-width:600px) and (min-width:320px){
+    .main_head{
+    width: auto;
+}
+.B_head{
+    font-size: 15px;
+    
+}
+form{
+    width: auto;
+    height: auto;
+    
+}
+.main_head{
+    width: auto;
+    max-height: 100vh;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid red;
+    
+}
+
+}
