@@ -60,9 +60,9 @@ function renderData(data){
         let desc=document.createElement("p");
         desc.innerText=elem.description;
         let price=document.createElement("p");
-        price.innerText=elem.price;
+        price.innerText="Price: "+ " ₹"+elem.price;
         let offer_price=document.createElement("p");
-        offer_price.innerText=elem.offer_Price;
+        offer_price.innerText="Offer price: "+ "₹"+elem.offer_Price;
         offer_price.setAttribute("class",'discount');
         price.setAttribute("class",'price');
         let btn=document.createElement("button");
