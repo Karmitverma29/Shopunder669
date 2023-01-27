@@ -286,7 +286,9 @@ border-radius: 50%;
 .containers{
     display: flex;
 }
-
+i.fa-user-circle {
+font-size: 25px;
+}
 .category-top {
   display: flex;
   flex-wrap: nowrap;

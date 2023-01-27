@@ -147,7 +147,9 @@
     text-decoration: line-through;
     margin-right: 10px;
 }
-
+i.fa-user-circle {
+    font-size: 25px;
+    }
 #shirts>div>button {
     background-color: black;
     color: #fff;

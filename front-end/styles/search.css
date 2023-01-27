@@ -267,7 +267,9 @@ cursor: pointer;
 font-weight: 600;
 
   }
-
+  i.fa-user-circle {
+    font-size: 25px;
+    }
   @media only screen and (max-width: 768px) {
     #searched{
         grid-template-columns: repeat(2,1fr);

@@ -331,7 +331,9 @@ font-weight: 600;
     border-radius: 10px;
 }
 
-
+i.fa-user-circle {
+    font-size: 25px;
+    }
 
 @media only screen and (max-width: 768px) {
     #allproducts{
