@@ -128,7 +128,9 @@ cursor: pointer;
     object-fit: cover;
     border-radius: 10px;
 }
-
+i.fa-user-circle {
+  font-size: 25px;
+  }
 #cart_page>div> h2 {
     font-size: 1.2em;
     font-weight: 800;

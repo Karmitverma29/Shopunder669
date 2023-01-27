@@ -59,7 +59,9 @@
        width: 100px;
        border-radius: 50%;
    }
-  
+   i.fa-user-circle {
+    font-size: 25px;
+    }
    .logoname{
     font-family:fantasy;
   }
