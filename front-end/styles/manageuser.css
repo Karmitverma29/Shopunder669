@@ -21,7 +21,10 @@
     background-color: #f5f5f5;
     color: #444;
 }
+.managenav{
+    background: linear-gradient(to right, #ff5e62, #ff9966);
 
+}
 @keyframes fadeIn {
     from {
         opacity: 0;

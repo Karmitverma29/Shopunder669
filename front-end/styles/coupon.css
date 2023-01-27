@@ -90,3 +90,31 @@ body{
     background-color: #3e8e41;
     transform: scale(1.1);
 }
+.admin-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .admin-nav h1 {
+    margin: 0 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .admin-nav h1:hover {
+    transform: scale(1.1);
+  }
+  
+  .admin-nav .active {
+    font-weight: bold;
+  }
+  
