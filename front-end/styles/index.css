@@ -109,35 +109,7 @@ cursor: pointer;
 
 
 
-#banner2{
-  height: 500px;
-  width: 100%;
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  background-color:#ffffff;
-  }
-  #banner2>div{
-    /* border: 7px solid red; */
-  background-color: #ffffff;
-  
-  }
-  .banner2-img img{
-    margin-top: 10px;
-    width: 100%;
-    height: 500px;
-  }
-  
-#banner2>.texts{
-font-size: 48px;
-display: flex;
-justify-content: center;
-align-items: center;
 
-}
-#banner2>.texts>h1{
-text-align: center;
-}
 .banner>.imagebanner{
 display: flex;
 justify-content: center;
@@ -339,7 +311,7 @@ border-radius: 50%;
 }
 
 
-.category-cards {
+.category-cards{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   justify-content: center;
@@ -438,16 +410,7 @@ border-radius: 50%;
             }
             
             
-            #banner2{
-   grid-template-columns: repeat(1,1fr);
-}
-#banner2>.texts{
-    font-size: 18px;
-    
-    }
-    #banner2>.texts>h1{
-    text-align: center;
-    }
+
 #search-input{
   width: 70%;
 

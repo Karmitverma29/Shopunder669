@@ -72,27 +72,31 @@ function renderData(data){
         let btn=document.createElement("button");
         btn.innerText="Add to cart";
         btn.addEventListener("click",()=>{
-            let storeData={
-                image:elem.image,
-                name:elem.name,
-                description:elem.description,
-                price:elem.price,
-                offer_price:elem.offer_price
-            }
-            let token="shop669 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2M2NhM2JhNWRkNzEwNmNmM2YzNDBlYzgiLCJpYXQiOjE2NzQxOTc5NDJ9.tQPl_MmWwZPY-x_cD2L_j4dyMSNwx4r57YgGa7HfS7g"
+          if (token == "") {
+            alert("Please Login first.");
+            window.location.href="./login.html";
+          } else {
+            let storeData = {
+              image: elem.image,
+              name: elem.name,
+              description: elem.description,
+              price: elem.price,
+              offer_price: elem.offerPrice,
+            };
+          
             fetch("https://energetic-pea-coat-dog.cyclic.app/cart/create", {
-    method: "POST",
-    headers: { "Content-Type": "application/json","authorization":token},
-    body: JSON.stringify(storeData),
-
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      alert("Item created successfully");
-    })
-    .catch((error) => {
-      alert("Error: " + error);
-    });
+              method: "POST",
+              headers: { "Content-Type": "application/json", authorization: token },
+              body: JSON.stringify(storeData),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                alert("Item created successfully");
+              })
+              .catch((error) => {
+                alert("Error: " + error);
+              });
+          }
 
 
         })

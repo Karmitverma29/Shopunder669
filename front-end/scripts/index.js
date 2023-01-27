@@ -37,10 +37,7 @@ if (token == "") {
 let container = document.getElementById('Footer')
    container.innerHTML =Footer();
 let results = document.getElementById("search-results");
-document.getElementById("logout").addEventListener("click",()=>{
-    setCookie("shopToken","",0);
-    window.location.href="./login.html"
-})
+
 document.getElementById("search-btn").addEventListener("click", function (e) {
   e.preventDefault();
   let search = document.getElementById("search-input").value;
