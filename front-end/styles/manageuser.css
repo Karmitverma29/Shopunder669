@@ -1,8 +1,32 @@
-body{
-    margin: 0px;
-    padding: 0px;
+#displayUser table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 1s ease;
 }
-#displayUser{
-    margin: auto;
-    font-size: 20px;
+#displayUser th, #displayUser td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+#displayUser th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+#displayUser tr:hover {
+    background-color: #f5f5f5;
+}
+#displayUser tr:hover td {
+    background-color: #f5f5f5;
+    color: #444;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
