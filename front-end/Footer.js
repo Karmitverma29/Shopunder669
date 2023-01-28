@@ -28,10 +28,10 @@ return `<footer  class="footer">
             <ul>
                 <li><a href="./books.html">Books</a></li>
                 <li><a href="./caps.html">Caps</a></li>
-                <li><a href="./hoodies.html">Hoodies</a></li>
-                <li><a href="./pants.html">Pants</a></li>
+                <li><a href="./hoodies.html">Nightwear</a></li>
+                <li><a href="./pants.html">Sweatshirts</a></li>
              <li><a href="./Tshirts.html">Tshirts</a></li>
-             <li><a href="./watches.html">watches</a></li>
+             <li><a href="./watches.html">Boxers</a></li>
              <li><a href="./shorts.html">Shorts</a></li>
            
             </ul>
