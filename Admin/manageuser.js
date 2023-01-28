@@ -1,5 +1,5 @@
 document.getElementById("admin_dash").addEventListener("click", () => {
-  window.location.href = "./admin.html";
+  window.location.href = "./index.html";
 });
 function getCookie(cname) {
   let name = cname + "=";
