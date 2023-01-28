@@ -37,3 +37,6 @@ document.getElementById("logout-button").addEventListener("click", () => {
   setCookie("shopUserData", "", 0);
   window.location.href = "./login.html";
 });
+document.getElementById("purchase-button").addEventListener("click", () => {
+  window.location.href = "./purchaseuser.html";
+});

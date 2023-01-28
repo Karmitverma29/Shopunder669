@@ -300,7 +300,10 @@ label[for="coupon-code"] {
     text-align: center;
     margin: 1em 0;
 }
-
+#cart_page>div{
+  margin: auto;
+  font-size: 20px;
+}
 #discount {
     font-size: 1.2em;
     font-weight: bold;

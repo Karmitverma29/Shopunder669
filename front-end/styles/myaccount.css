@@ -48,25 +48,14 @@ body {
     margin-bottom: 20px;
   }
   
-  #logout-button {
-    background: #f44336;
-    color: #fff;
-    font-size: 18px;
-    padding: 8px 15px;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  #logout-button:hover,#back-button:hover {
+  #logout-button:hover,#back-button:hover,#purchase-button:hover {
     background: #da190b;
   }
-  
-  #back-button{
+  #btndiv{
+    display: flex;
+    justify-content: space-between;
+  }
+  #back-button,#purchase-button,#logout-button{
     background: #f44336;
     color: #fff;
     font-size: 18px;
@@ -85,5 +74,9 @@ body {
     }
     #profile-picture ,#profile-info{
       margin: auto;
+    }
+    #btndiv{
+      flex-direction: column;
+      gap: 10px;
     }
   }

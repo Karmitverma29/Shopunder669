@@ -5,8 +5,9 @@ let head = document.querySelector("#Header");
 head.innerHTML = Header();
 import Footer from "../Footer.js";
 import OutNavbar from "../logoutNav.js";
-let container = document.querySelector("#Footer");
-container.innerHTML = Footer();
+let fcontainer = document.querySelector("#Footer");
+fcontainer.innerHTML = Footer();
+
 function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
@@ -22,7 +23,16 @@ function getCookie(cname) {
   }
   return "";
 }
+
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
 let token =getCookie("shopToken");
+
 if (token == "") {
   let nav = document.getElementById("nav");
   nav.innerHTML = Navbar();
@@ -34,22 +44,28 @@ if(token==""){
   alert("Please login first");
   window.location.href="./login.html";
 }
+let data=[];
 async function getdata() {
-  console.log(token)
   let res = await fetch(`https://energetic-pea-coat-dog.cyclic.app/cart`, {
     method: "GET",
-
     headers: { "Content-Type": "application/json", authorization: token },
   });
-  let data = await res.json();
-  console.log(data,"from 34");
-  renderData(data);
+  data = await res.json();
+  if(data.length<=0){
+    let ediv=document.createElement("div");
+    ediv.innerHTML="Your cart is empty"
+    container.append(ediv)
+  }
+  else{
+    renderData(data);
+  }
+  
 }
 getdata();
 let p = 0;
-function renderData(data) {
-  let container = document.getElementById("cart_page");
+let container = document.getElementById("cart_page");
 
+function renderData(data) {
   container.innerHTML = null;
 
   if(data.length>0){
@@ -98,7 +114,7 @@ function renderData(data) {
   }
 }
 
-let coupondata;
+let coupondata=[];
 fetch("https://energetic-pea-coat-dog.cyclic.app/coupon", {
   method: "GET",
 })
@@ -144,5 +160,20 @@ document.getElementById("coupon-code").addEventListener("change", () => {
     totalPrice.innerText = "Final Price: ₹" + p;
     document.getElementById("discount").innerHTML="";
     document.getElementById("final-price").innerHTML="";
+  }
+});
+
+document.querySelector(".checkout").addEventListener("click",(e)=>{
+  e.preventDefault()
+  if(data.length<=0){
+    alert("Your cart is empty")
+  }
+  else{
+    let fvalue=document.getElementById("total-price").innerHTML;
+    fvalue=fvalue.split("₹");
+    fvalue=fvalue[1];
+    setCookie("shopPrice",fvalue,30);
+    setCookie("shopCart",JSON.stringify(data),30);
+    window.location.href="./address.html"
   }
 });
